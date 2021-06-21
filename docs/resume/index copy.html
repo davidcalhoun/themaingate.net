@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>David Calhoun's Resume: Frontend Web Developer (HTML, CSS, JavaScript)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="robots" content="all">
+  <meta name="author" content="David Calhoun">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="verify-v1" content="icq5J/6O+loOEB3c47M2MKmXvt+GYiiKf0RtjWrx8aA=">
+
+  <link rel="Shortcut Icon" type="image/ico" href="http://themaingate.net/images/favicon.ico">
+  
+  <!-- HTML5 enabling script -->
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <style type="text/css">
+    .pdf {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAGFBMVEUAAACjo6NdXV1AQEDp6enExMSEhIQzMzMuCWROAAAAAXRSTlMAQObYZgAAAidJREFUeNrt2dtuhDAMBFBsj53//+MKUDtUu2pIwlR96DytloSzzgVWsL0NYB7dVG4LyWj3EikkmJozqg3FITSYnDHkirUmV9Au8Z8S8woHqxKdprMKBjphtpYa6VJtSoG3MzawRkaVbGcCA61HFeOlYgShMjIlNorMTGWOIlSUCBUlQkWJUFEiVJQIFS3C/nokIEWo6JHmQoQpLcJz6JFaQhifKoXIA6XYEsKgwi+JiMbUHNJHgQwhwvhvILmMIBMdBKuIsbcMMXZXIfz3CwnCQty5z2QIwP46ZNvLESO5hRbJvStklbC7p2xOeFkK0epijMd1COSbkQ1ikyG8jLsO4R3JdAinHmIEv1ZJg3xOtJeV6wnU9/iIvYUE4WjhaAUZknsh51kcKqTO9ZuHIkLwOU52UXDk2dtvsaEjrbwdccNDiPNQvX/QvY7Y5xhhL+AltYywENh3wKvqNLGGcCNmNYazkdyga4ifu53nRpB6qJLk2aISZ3HPzgnsS/DLUVQ8trpQHKWXCutIrm1GjkoUtk5mkYzLkx8NAq7ZVCGIy+pRIPwzt0sBAcI6zPidAKmjgmQXBRL7Z94HdUjw6ahuuGiIEDgvSzJkgzlfuisQ5h/5A4gpEeNx3YPO5Oabj3eGA74+Kbj92iGwXIh3xpPKvNHsRptmEwws7vzKbIzXYLwx1n0LuB7vDepy+lMKVxpUhAZja0ZhuxPUPOEYWPHuMRx3e098AKJJVQiIUAm4AAAAAElFTkSuQmCC);
+      background-size: 50px;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border: 0;
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Inline CSS for portability */
+    
+    /*
+    YUI Reset
+    Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+    Code licensed under the BSD License:
+    http://developer.yahoo.com/yui/license.html
+    version: 3.2.0
+    build: 2676
+    */
+   html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+    /* Safari 5, FF don't display some HTML5 elements as block */
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section { 
+       display:block;
+    }
+    
+    html {margin: 0 2%;}
+    body { font-family: helvetica, "times new roman", serif; color: #444; max-width: 800px; margin: 2em auto 3em auto; font-size: 15px; }
+    a { color: #555; text-decoration: none; font-weight: bold; }
+    h1 { font-size: 300%; font-weight: bold; }
+    h2 { font-size: 150%; }
+    header h1 { color: #333; }
+    header h1, header h2 { display: inline; }
+    header h2 {color: #9E9E9E;}
+    header { margin-bottom: 1em; }
+    section { line-height: 180%; border-top: 1px dashed #cacaca; padding: 1em 0 1em;}
+    section h2 { margin: 0 0 0.25em; }
+    .hide { display: none !important; }
+    
+    .rounded, #expand-button { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+    
+    .divider { border-color: #cacaca; border-width: 1px; }
+    .divider.top { border-top-style: dashed; padding: 1em 0 0; }
+    .divider.bottom { border-bottom-style: dashed; padding: 0 0 1em; }
+    
+    .experience { margin: 1em 0 0; }
+    .experience:first-child { margin: 0; }
+    .experience p { margin: 1em 0 0 1em; }
+    .experience .period + p { margin: 0 0 0 1em; }
+    .experience span.period + p.period { margin: 0 0 0 0.5em; }
+    .experience .period { margin: 0 0 0 0.5em; font-weight: bold; }
+    .experience .period ~ .period { margin: 1em 0 0 0.5em; }
+    .experience .summary { font-size: 110%; }
+    .experience ul { margin: 0 0 0 1em; }
+    .experience li, .skill, .happenings li { list-style-type: circle; list-style-position: inside; }
+    .experience h3 { display: inline; }
+    span.period { font-size: 85%; color: #777; }
+    
+    .education p { margin: 0.25em 0 0 1em; }
+    .education h3 { font-weight: bold; margin: 1em 0 0; }
+    .education .period, .education a { font-weight: normal; }
+    
+    .hide-expandos .expando p { display: none; }
+    #expand-button { font-size: 120%; padding: 0.1em 0.25em; background: #ddd; margin: 2em 0 0; display: block; text-align: center; }
+    #expand-button:hover { font-size: 120%; padding: 0.1em 0.25em; background: #eee; }
+    
+    /* Hide the interactive button for the print copy */
+    @media only print {
+      .pdf {display: none;}
+      #expand-button { display: none; }
+      .expando p {display: block !important;}
+      span.period { color: #666; }
+    }
+    
+    /* Mobile overrides */
+    @media only screen and (max-width: 480px) {
+    	body { max-width: 97%; margin: 1em 0; }
+    	h1 { font-size: 200%; }
+    	header h1, header h2 { display: block; }
+    }
+  </style>
+</head>
+
+<body class="hresume" itemscope itemtype="http://schema.org/Person">
+
+<a href="http://themaingate.net/resume/david-calhoun-resume.pdf" class="pdf" aria-label="PDF of David Calhoun's Resume" alt="PDF of David Calhoun's Resume"></a>
+
+<header role="banner" class="vcard">
+  <hgroup>
+    <h1 class="fn" itemprop="name">David Calhoun</h1>
+    <h2 itemprop="jobTitle">Frontend Web Developer</h2>
+  </hgroup>
+  <p class="divider top"><a href="mailto:david.b.calhoun@gmail.com" class="email" itemprop="email">david.b.calhoun@gmail.com</a></p>
+  <p><a href="http://themaingate.net" class="url" itemprop="url">themaingate.net</a></p>
+  <p><a href="http://davidbcalhoun.com" class="url" itemprop="url">davidbcalhoun.com: Developer blog</a></p>
+</header>
+
+<section role="article">
+  <h2>Job History</h2>
+  <ol class="vcalendar">
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.google.com/" class="url">Google (Mountain View, CA)</a></h3>
+      <span class="period"><abbr class="dtstart" title="2014-08-01">Aug 2014</abbr> to Present - Software Engineer</span>
+      <p>Skybox was acquired by Google in August 2014</p>
+      <p>I have been helping lay down the groundwork for new satellite dashboards within the Google codebase.  Using Polymer, Google Closure, Ramda.js, Moment.js, and D3.</p>
+    </li>
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.skybox.com/" class="url">Skybox Imaging (Mountain View, CA)</a></h3>
+      <span class="period"><abbr class="dtstart" title="2012-05-01">May 2012</abbr> to <abbr class="dtstart" title="2014-08-01">Aug 2014</abbr> - Frontend Web Developer</span>
+      <h4>August 2013 - September 2014: fulltime onsite</h4>
+      <p>Built the full stack for Process UI, allowing users to view and interact with satellite imagery at various stages in their processing.  Used NodeJS and Redis for the backend, and various microlibraries for the frontend.</p>
+      <p>Helped build the frontend for a satellite imaging scheduler, which gives external customers insight on the images and videos scheduled to be taken on future satellite passes around the Earth. I helped transition the code to Backbone.js.</p>
+      <p>Technologies used: Backbone.js and Underscore.js, Leaflet.js, RequireJS, jQuery (with plenty of native JS), SASS, Mustache templates.</p>
+
+      <h4>May 2012 - August 2013: contract, remote</h4>
+      <p>Built dashboards for monitoring live satellite telemetry. Also worked on laying down a shared "bootstrapping" frontend framework for several map-centric applications, as well as a rewrite of an application used to find satellite imagery based on a set of criteria.</p>
+    </li>
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.cbsinteractive.com/" class="url">CBS Interactive (San Francisco, CA)</a></h3>
+      <span class="period"><abbr class="dtstart" title="2011-08-01">August 2011</abbr> to <abbr class="dtstart" title="2012-05-01">May 2012</abbr> - Mobile Frontend Web Developer (Contract work)</span>
+      <p>Build most of the frontend for the new CNET mobile, using Node.js as a backend.  The new site was a dramatic improvement in terms of looks and especially speed, and a challenge to implement across many different devices.</p>
+    </li>
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.webmocha.com/" class="url">WebMocha (Remote Work)</a></h3>
+      <span class="period"><abbr class="dtstart" title="2009-01-01">January 2009</abbr> to Present - Web Developer (Contract work)</span>
+      <p>Work includes converting website mockups (images) to cross-browser compatible HTML/CSS, as well as a bit of Javascript work with jQuery.  Projects included work for the redesign of <a href="http://mog.com/" class="url">MOG</a> (jQuery) and MySpace (jQuery mixed with MySpace's JavaScript framework).</p>
+    </li>
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.webmocha.com/" class="url">JSMag (Remote Work)</a></h3>
+      <span class="period"><abbr class="dtstart" title="2010-10-01">October 2010</abbr> to <abbr class="dtend" title="2012-10-01">October 2012</abbr> - Community News writer (Contract work)</span>
+      <p>Maintained a weekly and monthly news column, following the developments of the JavaScript language and community.</p>
+    </li>    
+    <li class="experience vevent" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.yahoo.com/" class="url">Yahoo! Inc. (Sunnyvale, CA)</a></h3><span class="period"><abbr class="dtstart" title="2009-07-01">July 2009</abbr> to <abbr class="dtend" title="2011-04-01">April 2011</abbr></span>
+      <p class="period">Frontend Engineer on the Yahoo! Tiger Team (<abbr class="dtstart" title="2010-10-01">October 2010</abbr> to <abbr class="dtend" title="2011-04-01">April 2011</abbr>)</p>
+      <p>Developed and presented a portion of a two-day internal HTML5/CSS3 training.</p>
+      <p>Developed an internal Mobile Web training.</p>
+      <p>On the planning committee for the Frontend Summit 2011 (Yahoo! internal).</p>
+      <p>Investigated the technologies needed and scoped time estimates for an in-progress project (ask for details).</p>
+
+      <p class="period">Frontend Engineer at Yahoo! Mobile (<abbr class="dtstart" title="2009-07-01">July 2009</abbr> to <abbr class="dtend" title="2010-10-01">October 2010</abbr>)</p>
+      <p>Worked on maintaining the <a href="http://mobile.yahoo.com/devcenter" class="url">Blueprint platform</a>, which gave me the experience of debugging on a very wide variety of mobile browsers.  Implemented several major features such as <a href="http://ymobileblog.com/blog/2010/03/10/yahoo-sports%E2%80%99-%E2%80%9Ctourney-pick%E2%80%99em%E2%80%9D-goes-mobile/" class="url">sports brackets</a>, made some features more accessible to screenreaders, and created Blueprint examples for a revised developer SDK.</p>
+      <p>Initiated and organized the Mobile Developer Summit 2010, Yahoo! Mobile's first internal company-wide conference.</p>
+      <p>Hackday Winter 2009: Designed a Wordpress theme that outputs Blueprint code.</p>
+      <p>Talks given:</p>
+      <ul>
+        <li>CSS3 (part of an internal HTML5 workshop)</li>
+        <li>Intro to HTML5 (for internal Hack Day Bazaar Summer 2010)</li>
+        <li>Hosted the Mobile Developer Summit 2010, gave a keynote, and gave a short talk on Blueprint (2010, internal)</li>
+        <li>"Designing for Mobile Multiplicity (and how Blueprint makes it easier)" (2009, internal)</li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" id="expand-button" class="hide">&lt;&lt; Show details &gt;&gt;</a>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.yahoo.com/" class="url">Yahoo! Inc.</a></h3>
+      <span class="period"><abbr class="dtstart" title="2008-06-01">June 2008</abbr> to <abbr class="dtend" title="2008-10-01">October 2008</abbr> - Frontend Engineer Intern for Yahoo! Shine</span>
+      <p>Created HTML/CSS wireframes of proposed <a href="http://themaingate.net/portfolio/" class="url">three-column versions</a> of the blogpost page for Yahoo! Shine.</p>
+      <p>Implemented the frontend interface for editors to use in scheduling featured blog posts.  Implemented using YUI Calendar and some minimal JS validation.  Used some PHP in retrieving variables passed from the database from the backend.</p>
+      <p>Created internal documentation to be read by editors, instructing them in the use of the Yahoo Polls Platform.</p>
+      <p>Started work on a web-based application for creating email newsletters.  This involved heavy research into the CSS support of different email clients.  The application was never utilized and thus never completed, but I used the opportunity to practice using object-oriented Javascript while using YUI.</p>
+      <p>In addition to these responsibilities, I was given the opportunity to attend a few weeks of Yahoo!s <a href="http://yuiblog.com/blog/2007/12/06/juku/" class="url">Juku Program</a> for frontend training.  I learned a lot during these weeks and also the weeks studying online materials.</p>
+      <p>Familiarized myself with command-line Linux, specifically RHEL and FreeBSD, both of which I learned how to use to access distributions of software from the Yahoo code repository.</p>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://headlinemedia.com/" class="url">Headline Media</a></h3>
+      <span class="period"><abbr class="dtstart" title="2008-04-01">April 2008</abbr> to <abbr class="dtend" title="2008-06-01">June 2008</abbr> - Web Developer (Contract work)</span>
+      <p>Worked on several websites, usually updating and adding content.  In some cases required modifying the template of a CMS such as osCommerce.</p>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.atlus.com/" class="url">Atlus USA</a></h3>
+      <span class="period"><abbr class="dtstart" title="2007-11-01">November 2007</abbr> - <abbr class="dtend" title="2008-01-01">January 2008</abbr> - QA Game Tester</span>
+      <p>Tested Persona 3 FES for the Sony Playstation 2 prior to the game's release in the US.</p>
+      <p>Imported video and still pictures from Persona 3 FES for use on the Atlus website.</p>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.javaground.com/" class="url">Javaground USA, Inc.</a></h3>
+      <span class="period"><abbr class="dtstart" title="2007-02-01">February 2007</abbr> to <abbr class="dtend" title="2008-10-01">October 2008</abbr> - QA Game Tester</span>
+      <p>Administered J2ME Java-based "profilers" that profiled various aspects of cell phone capabilities, such as memory, audio, and fonts. This information was used to develop games tailor-made to each phone.</p>
+      <p>Revised and rewrote technical documentation for operating the profilers.</p>
+      <p>Thoroughly tested games made (or ported) by the developers according to a testing plan.</p>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://offices.biola.edu/it/" class="url">IT Helpdesk, Biola University</a></h3>
+      <span class="period"><abbr class="dtstart" title="2005-09-01">September 2005</abbr> to <abbr class="dtend" title="2006-12-01">December 2006</abbr> - Helpdesk Technician</span>
+      <p>Assisted faculty, staff, and students diagnose and repair software and hardware issues on their computers (PC and Mac OSX).</p>
+      <p>Oversaw over the computer lab (helped patrons print documents, etc.).</p>
+    </li>
+    <li class="experience vevent expando" itemscope itemtype="http://schema.org/Organization">
+      <h3 class="summary location" itemprop="name"><a href="http://www.ulv.edu/ctl/" class="url">Instructional Technology Center, University of La Verne</a></h3>
+      <span class="period"><abbr class="dtstart" title="2003-09-01">September 2003</abbr> - <abbr class="dtend" title="2005-01-01">January 2005</abbr> - Web Programmer</span>
+      <p>Learned PHP/MySQL and implemented several projects: ULV Plant Database (relational database structure), Senior Project Database, ULV Recycling Database.</p>
+      <p>Helped design database structure for SmartTracker, ITC's internal equipment tracking system.</p>
+    </li>
+  </ol>
+</section>
+
+<section role="article">
+  <h2>Skills</h2>
+  <ul>
+    <li class="skill"><a href="https://www.youtube.com/watch?v=vtvHOn9mIB4">Spoke at JSConf 2014.  Talk title: Realtime Satellite Tracking in the Browser</a></li>
+    <li class="skill">Mobile Web, HTML, CSS, Javascript, PHP, MySQL</li>
+    <li class="skill">Cross-browser normalization of HTML and CSS on both the desktop and mobile devices.</li>
+    <li class="skill">Frontend performance optimization</li>
+    <li class="skill">Web accessibility for users with disabilities, including working with Victor Tsaran to make Yahoo Mobile more accessible (using VoiceOver on the iPhone).</li>
+    <li class="skill">Microformats and Search Engine optimization techniques</li>
+    <li class="skill">Experience running an Apache server on Linux (RHEL), Max OSX (with XAMPP), and Windows (with WAMP)</li>
+    <li class="skills">Experience organizing and speaking at company-wide conferences.</li>
+  </ul>
+</section>
+
+<section role="article">
+  <h2>Education</h2>
+  <ol class="vcalendar">
+    <li class="education vevent">
+      <h3>Bachelor's Degree</h3>
+      <p class="summary"><a href="http://www.biola.edu/" class="url">Biola University</a> (Philosophy: <abbr class="dtstart" title="2004-08-01">Fall 2004</a> to  <abbr class="dtend" titlbbre="2006-08-01">Fall 2006</abbr>)</p>
+      <p class="summary"><a href="http://www.ulv.edu/" class="url">University of La Verne</a> (Philosophy/Religion: <abbr class="dtstart" title="2002-08-01">Fall 2002</abbr> to <abbr class="dtend" title="2004-01-01">Spring 2004</abbr>)</p>
+    </li>
+    <li class="education vevent">
+      <h3>High School Diploma</h3>
+      <p class="summary">La Serna High School (<abbr class="dtstart" title="1998-08-01">1998</abbr> to <abbr class="dtend" title="2002-05-01">2002</abbr>)</p>
+    </li>
+  </ol>
+</section>
+
+<section role="article">
+  <h2>References</h2>
+  <p><a href="http://phuson.com/" class="url">Phu Son Nguyen</a>: Frontend Engineer at Yahoo! (<a href="http://www.linkedin.com/in/phuson" class="url">LinkedIn</a>)</p>
+  <p><a href="http://www.zomie.com/" class="url">James Long</a>: Former Frontend Engineer at Yahoo! (<a href="http://www.linkedin.com/pub/james-long/4/256/729" class="url">LinkedIn</a>)</p>
+  <p>Mark Marquez: Former QA Lead at Javaground, Inc (ask for email)</p>
+  <p>Cedric Tisserand: Former Manager of the Instructional Technology Center (ask for email)</p>
+  <p>More references given upon request.</p>
+</section>
+
+<section role="article">
+  <h2>Links</h2>
+  <ul>
+    <li><a href="http://www.linkedin.com/in/davidcalhoun" class="url">Profile on Linkedin</a></li>
+    <li><a href="http://themaingate.net/portfolio/" class="url">Portfolio</a></li>
+    <li><a href="https://github.com/davidcalhoun">Github</a></li>
+  </ul>
+</section>
+
+<script>
+
+/* look ma, no jQuery! */
+(function(){
+  var onload, expandButton, expandos, i, len, expandosShown, toggleExpandos;
+
+  expandosShown = true;
+  
+  util = (function() {
+    return {
+      on: (function() {
+        if(window.addEventListener) {
+          return function(elt, event, fn) {
+            elt.addEventListener(event, fn, false);
+          }
+        } else if(window.attachEvent) {
+          return function(elt, event, fn) {
+            elt.attachEvent('on' + event, fn);
+          }
+        } else {
+          return function(elt, event, fn) {
+            elt['on' + event] = fn;
+          }
+        }
+      })(),
+      
+      preventDefault: (function() {
+        if (window.event) {
+          return function(e) {
+            window.event.returnValue = false;
+          }
+        } else {
+          return function(e) {
+            e.preventDefault();
+          }
+        }
+      })(),
+      
+      getClass: (function() {
+        if(document.getAttribute) {
+          return function(elt) {
+            return elt.getAttribute('class');
+          }
+        } else {
+          return function(elt) {
+            return elt.className;
+          }
+        }
+      })(),
+      
+      hasClass: function(elt, cls) {
+        return !!this.getClass(elt).match((new RegExp(' ' + cls + ' ')));
+      },
+      
+      addClass: (function() {
+        if(document.body.setAttribute) {
+          return function(elt, cls) {
+            if(!this.hasClass(elt, cls)) {
+              elt.setAttribute('class', this.getClass(elt) + ' ' + cls + ' ');
+            }
+          }
+        } else {
+          return function(elt, cls) {
+            if(!this.hasClass(elt, cls)) {
+              elt.className = this.getClass(elt) + ' ' + cls + ' ';
+            }
+          }
+        }
+      })(),
+      
+      removeClass: (function(){
+        if(document.body.setAttribute) {
+          return function(elt, cls) {
+            elt.setAttribute('class', this.getClass(elt).replace(' ' + cls + ' ', ''));
+          }
+        } else {
+          return function(elt, cls) {
+            elt.className = this.getClass(elt).replace(' ' + cls + ' ', '');
+          }
+        }
+      })()
+    }
+  })();
+
+  expandClick = function(e) {
+    util.preventDefault(e);
+    toggleExpandos();
+  };
+  
+  toggleExpandos = function() {
+    if(expandosShown) {
+      expandButton.innerHTML = '&lt;&lt; Show details &gt;&gt;';
+      util.addClass(document.body.parentNode, 'hide-expandos');
+      
+      expandosShown = false;
+    } else {
+      expandButton.innerHTML = '&gt;&gt; Hide details &lt;&lt;';
+      //document.body.parentNode.setAttribute('class', '');
+      util.removeClass(document.body.parentNode, 'hide-expandos');
+      expandosShown = true;
+    }
+  }
+
+  onload = function() {
+    expandButton = document.getElementById('expand-button');
+    if(expandButton) {
+      util.on(expandButton, 'click', expandClick);
+      expandButton.setAttribute('class', '');
+      toggleExpandos();
+    }
+  };
+
+  
+  util.on(window, 'load', onload);
+})();
+
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5530615-2");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

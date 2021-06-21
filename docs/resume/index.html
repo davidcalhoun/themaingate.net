@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>David Calhoun, frontend web developer résumé</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="robots" content="all">
+  <meta name="author" content="David Calhoun">
+  <meta name="description" content="Frontend developer David Calhoun's résumé.">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="verify-v1" content="icq5J/6O+loOEB3c47M2MKmXvt+GYiiKf0RtjWrx8aA=">
+
+  <link rel="canonical" href="//themaingate.net/resume/">
+  <link rel="Shortcut Icon" type="image/ico" href="//themaingate.net/favicon.ico">
+  
+  <!-- HTML5 enabling script -->
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <style type="text/css">
+    .pdf {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border: 0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .pdf:hover,
+    .pdf:focus {
+      border-bottom: 0;
+    }
+
+    .pdf svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+
+    /* Inline CSS for portability */
+    
+    /*
+    YUI Reset
+    Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+    Code licensed under the BSD License:
+    http://developer.yahoo.com/yui/license.html
+    version: 3.2.0
+    build: 2676
+    */
+   html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+    /* Safari 5, FF don't display some HTML5 elements as block */
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section { 
+       display:block;
+    }
+    
+    html {margin: 0 2%;}
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+      color: #444;
+      max-width: 800px;
+      margin: 2em auto 3em auto;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+
+    }
+    a {
+      color: #3c3c3c;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+      transition: 0.25s border-bottom ease-in-out;
+    }
+    a:hover,
+    a:active,
+    a:focus {
+      border-bottom: 1px solid #8c8c8c;
+    }
+    h1 { font-size: 300%; font-weight: bold; }
+    h2 { font-size: 150%; }
+    header h1 { color: #333; }
+    header h1, header h2 { display: inline; }
+    header h2 {color: #757575; text-transform: lowercase; margin-left: 0.25rem;}
+    header section {margin-top: 1em;}
+    header hgroup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    section { line-height: 180%; border-top: 1px dashed #cacaca; padding: 1em 0 1em;}
+    section h2 { margin: 0 0 0.25em; }
+    .hide { display: none !important; }
+    em {
+      font-weight: 700;
+    }
+
+    #expandButton {
+        padding: 0.4em 0.75em;
+        margin-left: 1em;
+        position: relative;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        border-width: 0;
+        cursor: pointer;
+        font-size: 55%;
+        vertical-align: middle;
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+        background-color: #e0e0e0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    #expandButton:hover,
+    #expandButton:focus,
+    #expandButton:active {
+        background-color: #d5d5d5;
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    }
+
+    #expandButton:active {
+        background-color: #bfbfbf;
+    }
+
+    #expandButton:focus {
+        outline: 0;
+        transition-duration: 0.1s;
+    }
+    
+    .divider { border-color: #cacaca; border-width: 1px; }
+    .divider.top { border-top-style: dashed; padding: 1em 0 0; }
+    .divider.bottom { border-bottom-style: dashed; padding: 0 0 1em; }
+
+
+    .subdued {
+      font-size: 85%;
+      color: #484848;
+    }
+
+    .job-history .description li:not(:first-child) {
+      margin-top: 0.25em;
+    }
+
+    .job-history .description h4:not(:first-child) {
+      margin-top: 0.75em;
+    }
+
+    .hide-expandos .experience { margin: 0.25em 0 0; }
+    body:not(.hide-expandos) .experience:not(:first-child) { margin: 0.75em 0 0; }
+    .experience ul { margin: 0 0 0 1em; }
+    .experience h3 {
+      display: inline;
+      padding-right: 0.5rem;
+      min-width: 13rem;
+    }
+
+    .experience h4 {
+      font-style: italic;
+    }
+
+    .experience li {
+      list-style-type: square;
+      list-style-position: inside;
+    }
+
+    section li {
+      margin-bottom: 0.2rem;
+    }
+
+    section p {
+      line-height: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    
+    .hide-expandos .expando-collapsable .description { display: none; }
+    .show-individual-expando .description { display: block !important; }
+    #expand-button { font-size: 120%; padding: 0.1em 0.25em; background: #ddd; margin: 2em 0 0; display: block; text-align: center; }
+    #expand-button:hover { font-size: 120%; padding: 0.1em 0.25em; background: #eee; }
+
+    .job-history-list {
+      border-left: 1px dashed #cacaca;
+      padding-left: 0.5rem;
+    }
+
+    .experience {
+      position: relative;
+    }
+
+    .experience:before {
+      content: '';
+      position: absolute;
+      top: 0.6rem;
+      left: -0.78rem;
+      display: inline-block;
+      background-color: transparent;
+      width: 8px;
+      height: 8px;
+      background-repeat: no-repeat;
+      background-size: 8px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAALVBMVEVHcEwAAAAAAAAAAAAREREBAQEAAAAAAABra2uxsbHZ2dn09PR6enr///9fX19wsMP7AAAACHRSTlMAHHzD9/86mcyfFMAAAACPSURBVHjafZJbDsMgDAQJ9pCAce9/3KgPSqpQz++IlbE3DbYsCip5S78U4YuUq9lBj9rMWj0U9pkl0M0/WAcZqYI2v9AUGWnDTPfOLDDMdFBecd1vdOT5SO2uTCkp8/AFBzkJdaUqkpS2Ug1NYL4C/imDIDAYIxg++HKwqGC9wVGCU8YFmLVxn7UJyxZU9ARvJBYzV993FgAAAABJRU5ErkJggg==);
+    }
+    
+    /* Print overrides. */
+    @page {
+      margin: 0.2in 0.3in 0;
+    }
+
+    @media only print {
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-size: 10px;
+        max-width: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      #expandButton { display: none; }
+      span.period { color: #666; }
+      body .printOnly {
+        display: block;
+      }
+
+      .hide-expandos .expando-collapsable .description {
+        display: none;
+      }
+
+      body .job-history-list {
+        margin-left: 0.5rem;
+      }
+
+      section {
+        padding: 0.5rem 0;
+      }
+
+      .pdf {
+        display: none;
+      }
+    }
+    
+    /* Mobile overrides */
+    @media only screen and (max-width: 800px) {
+        .job-history .period {
+          display: block;
+        }
+
+        .pdf {
+          background-size: 30px;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        body { max-width: 97%; margin: 1em 0; }
+        h1 { font-size: 200%; }
+        header h1, header h2 { display: block; }
+        .job-history .period {
+          display: block;
+          line-height: 130%;
+        }
+    }
+
+    .printOnly {
+      display: none;
+    }
+
+    .introBullets {
+      display: flex;
+    }
+
+    .introBullets li {
+      flex: 1;
+    }
+
+    .summaryContainer {
+      display: flex;
+    }
+
+    .summaryContainer .summary {
+      flex: 1;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5530615-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-5530615-2');
+  </script>
+</head>
+
+<body class="hresume" itemscope itemtype="https://schema.org/Person">
+
+<meta itemprop="image" content="//themaingate.net/david-calhoun.jpg" />
+<meta itemprop="gender" content="Male" />
+<meta itemprop="honorificPrefix" content="Mr" />
+<meta itemprop="nationality" content="//en.wikipedia.org/wiki/United_States" />
+<span itemprop="workLocation" itemscope itemtype="https://schema.org/PostalAddress">
+  <meta itemprop="addressLocality" content="Charleston" />
+  <span itemprop="addressCountry" itemscope itemtype="https://schema.org/Country">
+    <meta itemprop="name" content="USA" />
+  </span>
+</span>
+<meta itemprop="worksFor" content="Self" />
+<meta itemprop="mainEntityOfPage" content="//themaingate.net" />
+
+<a href="https://themaingate.net/resume/david-calhoun-resume-2020.pdf" class="pdf" aria-label="Download the PDF version of this resume." title="Download the PDF version of this resume.">
+  <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1596 380q28 28 48 76t20 88v1152q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1600q0-40 28-68t68-28h896q40 0 88 20t76 48zm-444-244v376h376q-10-29-22-41l-313-313q-12-12-41-22zm384 1528v-1024h-416q-40 0-68-28t-28-68v-416h-768v1536h1280zm-514-593q33 26 84 56 59-7 117-7 147 0 177 49 16 22 2 52 0 1-1 2l-2 2v1q-6 38-71 38-48 0-115-20t-130-53q-221 24-392 83-153 262-242 262-15 0-28-7l-24-12q-1-1-6-5-10-10-6-36 9-40 56-91.5t132-96.5q14-9 23 6 2 2 2 4 52-85 107-197 68-136 104-262-24-82-30.5-159.5t6.5-127.5q11-40 42-40h22q23 0 35 15 18 21 9 68-2 6-4 8 1 3 1 8v30q-2 123-14 192 55 164 146 238zm-576 411q52-24 137-158-51 40-87.5 84t-49.5 74zm398-920q-15 42-2 132 1-7 7-44 0-3 7-43 1-4 4-8-1-1-1-2-1-2-1-3-1-22-13-36 0 1-1 2v2zm-124 661q135-54 284-81-2-1-13-9.5t-16-13.5q-76-67-127-176-27 86-83 197-30 56-45 83zm646-16q-24-24-140-24 76 28 124 28 14 0 18-1 0-1-2-3z"/></svg>
+</a>
+
+<header role="banner" class="vcard">
+  <hgroup>
+    <h1 class="fn" itemprop="name"><span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span></h1>
+    <h2><span itemprop="jobTitle">Frontend Web Developer</span></h2>
+  </hgroup>
+  <p class="printOnly">Available online at <a href="https://www.themaingate.net/resume">themaingate.net/resume</a></p>
+  <section>
+    <ul>
+      <li><em>Note: not currently open to new opportunities at this time.</em></li>
+    </ul>
+    <ul class="introBullets">
+      <li>Email: <span itemprop="email">david.b.calhoun@gmail.com</span></li>
+      <li>Website: <a href="//themaingate.net" class="url" itemprop="url">themaingate.net</a></li>
+    </ul>
+    <ul class="introBullets">
+      <li>Github: <a href="//github.com/davidcalhoun">github.com/davidcalhoun</a></li>
+      <li>Linkedin: <a href="//www.linkedin.com/in/davidcalhoun" class="url">linkedin.com/in/davidcalhoun</a></li>
+    </ul>
+  </section>
+</header>
+
+<section role="article" class="job-history">
+  <h2>
+    <span>Job History</span>
+<!--     <button role="button" id="expandButton" aria-label="Toggle job details" title="Toggle job details">Show Details</button> -->
+  </h2>
+  <ol class="vcalendar job-history-list">
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.methanesat.org/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">MethaneSAT</span> (remote)</a></h3>
+        <span class="period subdued">Senior Front End Engineer (full time, <time class="dt-start" datetime="2020-08-03">Aug 2020</time> to Present)</span>
+      </div>
+      <ul class="description">
+        <li>Leading all frontend efforts at MethaneSAT, with React and TypeScript.</li>
+        <li>Responsible for meeting with internal and external stakeholders to determine product needs and direction.</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.netflix.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Netflix</span> (Los Gatos, CA)</a></h3>
+        <span class="period subdued">UI Consultant (full time, <time class="dt-start" datetime="2017-11-06">Nov 2017</time> to <time class="dt-end" datetime="2019-03-29">Mar 2019</time>)</span>
+      </div>
+      <ul class="description">
+        <li>As the frontend expert for the Partner Lifecycle Engineering (PLE) team, I maintained an in-house UI component library built on Material UI and added new features and maintained various React apps.  Worked closely with QA to examine pains in testing React apps, and developed an <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">ESLint plugin</a> to help enforce new test-friendly code standards.</li>
+        <li><em>Technologies used</em>: Node.js, React.js, Redux, RXJS, Material UI built with Webpack, Rollup, as well as backend tech such as Node.js and PostgreSQL.</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.webmocha.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">WebMocha</span> (Remote)</a></h3>
+        <span class="period subdued">Web Developer (Remote Contractor) (part time, <time class="dt-start" datetime="2009-01-01">January 2009</time> to <time class="dt-end" datetime="2017-11-01">November 2017</time>)</span>
+      </div>
+      <ul class="description">
+        <li>Built a fullstack dashboard tool to ingest and organize technical content from Twitter and Pocket, to assist with a weekly newsletter.  React.js and Node.js.  Also helped with various short-term projects (Wordpress, etc).</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.google.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Google</span> (Mountain View, CA)</a></h3>
+        <span class="period subdued">Software Engineer (full time, <time class="dt-start" datetime="2014-08-01">Aug 2014</time> to <time class="dt-end" datetime="2016-03-01">Mar 2016</time>)</span>
+      </div>
+      <ul class="description">
+        <li>After Terra Bella (Skybox Imaging) was acquired by Google in August 2014, I helped start the groundwork for new imaging satellite dashboards within the Google codebase and new coding standards.</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//planet.com/terrabella/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Terra Bella</span> (Mountain View, CA)</a></h3>
+        <span class="period subdued">Frontend Web Developer (full time, <time class="dt-start" datetime="2012-05-01">May 2012</time> to <time class="dt-end" datetime="2014-08-01">Aug 2014</time>)</span>
+      </div>
+      <div class="description">
+        <h4>On-Site (full time, August 2013 - August 2014)</h4>
+        <ul>
+          <li>Collaborated with a designer and end users to build an entire fullstack app to preview images in the image processing pipeline.  Node.js, Redis, and Socket.io.</li>
+        </ul>
+        <h4>Remote Contractor (part time, May 2012 - August 2013)</h4>
+        <ul>
+          <li>Created the Mission Operations Center dashboard used for monitoring live satellite telemetry, also developed several map-based apps.</li>
+        </ul>
+      </div>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.cbsinteractive.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">CBS Interactive</span> (San Francisco, CA)</a></h3>
+        <span class="period subdued">Mobile Frontend Web Developer (full time contractor) (<time class="dt-start" datetime="2011-08-01">August 2011</time> to <time class="dt-end" datetime="2012-05-01">May 2012</time>)</span>
+      </div>
+      <ul class="description">
+        <li>Developed an entirely new and fast frontend for the CNET mobile, using Node.js as a backend.</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.webmocha.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">JSMag</span> (Remote)</a></h3>
+        <span class="period subdued">Community News writer (remote part time contractor) (<time class="dt-start" datetime="2010-10-01">October 2010</time> to <time class="dt-end" datetime="2012-10-01">October 2012</time>)</span>
+      </div>
+      <ul class="description">
+        <li>Writer for a weekly and monthly column about the latest JavaScript community happenings.</li>
+      </ul>
+    </li>
+    <li class="experience h-event expando-collapsable" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="summary p-name"><a href="//www.yahoo.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Yahoo! Inc.</span> <span class="p-location">(Sunnyvale, CA)</span></a></h3>
+        <span class="period subdued">Frontend Engineer (<time class="dt-start" datetime="2008-06-01">June 2008</time> to <time class="dt-end" datetime="2008-10-01">October 2008</time>, <time class="dt-start" datetime="2009-07-01">July 2009</time> to <time class="dt-end" datetime="2011-04-01">April 2011</time>)</span>
+      </div>
+      <div class="description">
+        <h4 class="period">Frontend Engineer on the Yahoo! Tiger Team (full time, <time class="dt-start" datetime="2010-10-01">October 2010</time> to <time class="dt-end" datetime="2011-04-01">April 2011</time>)</h4>
+        <ul class="description">
+          <li>Taught an internal HTML5/CSS3 training and took initiative to help restart an internal frontend conference.</li>
+        </ul>
+        <h4 class="period">Frontend Engineer at Yahoo! Mobile (full time, <time class="dt-start" datetime="2009-07-01">July 2009</time> to <time class="dt-end" datetime="2010-10-01">October 2010</time>)</h4>
+        <ul class="description">
+          <li>Developed on the <a href="//web.archive.org/web/20110112212420/http://mobile.yahoo.com/devcenter" class="url" target="_blank" rel="noreferrer">Blueprint mobile platform</a>, a cross-browser component library for "nonsmart" phones.  Implemented new components and improved accessibility.  Also created and hosted the Mobile Developer Summit conference.</li>
+        </ul>
+        <h4 class="period">Frontend Engineer Intern for Yahoo! Shine (full time, <time class="dt-start" datetime="2008-06-01">June 2008</time> to <time class="dt-end" datetime="2008-10-01">October 2008</time>)</h4>
+        <ul class="description">
+          <li>Developed an internal post scheduler feature for content writers and design explorations of a three-column blog post layout.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section role="article" class="talks-and-articles">
+  <h2>Talks and Posts</h2>
+  <ul>
+    <li><a href="https://calendar.perfplanet.com/2019/bundling-javascript-for-performance-best-practices/" target="_blank" rel="noreferrer">Bundling JavaScript for Performance: Best Practices (Web Performance Calendar)</a></li>
+    <li><a href="https://www.davidbcalhoun.com/2018/a-simple-introduction-to-javascript-map-and-reduce-array-helper-functions/" target="_blank" rel="noreferrer">A Simple Introduction to Javascript Map and Reduce Array Helper Functions</a></li>
+    <li>JSConf talk videos: <a href="//www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript</a>, <a href="//www.youtube.com/watch?v=vtvHOn9mIB4" target="_blank" rel="noreferrer">Realtime Satellite Tracking in the Browser</a></li>
+  </ul>
+</section>
+
+<section role="article">
+  <h2>More Info</h2>
+  <ul>
+    <li class="h-event education" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+      Education: <a href="//www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a>
+    </li>
+    <li>Interests: Hiking (hiked over 1000 miles of the Appalachian Trail in 2019!), photography, philosophy, classic cinema (lots of Criterion Collection titles!).</li>
+    <li></li>
+  </ul>
+</section>
+
+<section role="article">
+  <h2>References</h2>
+  <p>
+    <a href="//www.linkedin.com/pub/james-long/4/256/729" class="url" target="_blank" rel="noreferrer">James Long</a> (coworker at Skybox), <a href="https://www.linkedin.com/in/jcheuoua/" class="url" target="_blank" rel="noreferrer">Joël Cheuoua</a> (coworker at Netflix), <a href="https://www.linkedin.com/in/kpanayotova/" class="url" target="_blank" rel="noreferrer">Kalina Panayotova</a> (coworker at Netflix).
+  </p>
+</section>
+
+<script>
+
+/* A few JS helpers for the details button. */
+(function(){  
+  // Generic super small IIFE DOM utility with fallbacks.
+  util = (function() {
+    return {
+      // Adds an event listener to the DOM
+      on: (function() {
+        if (window.addEventListener) {
+          return function(elt, event, fn) {
+            if (elt) {
+              elt.addEventListener(event, fn, false);
+            }
+          }
+        } else if (window.attachEvent) {
+          return function(elt, event, fn) {
+            elt.attachEvent('on' + event, fn);
+          }
+        } else {
+          return function(elt, event, fn) {
+            elt['on' + event] = fn;
+          }
+        }
+      })(),
+      
+      preventDefault: (function() {
+        if (window.event) {
+          return function(e) {
+            window.event.returnValue = false;
+          }
+        } else {
+          return function(e) {
+            e.preventDefault();
+          }
+        }
+      })(),
+      
+      getClass: (function() {
+        if (document.getAttribute) {
+          return function(elt) {
+            return elt.getAttribute('class');
+          }
+        } else {
+          return function(elt) {
+            return elt.className;
+          }
+        }
+      })(),
+      
+      hasClass: function(elt, cls) {
+        if (typeof document.body.classList !== 'undefined') {
+            return elt.classList.contains(cls);
+        } else {
+            return !!this.getClass(elt).match((new RegExp(' ' + cls + ' ')));
+        }
+      },
+      
+      addClass: (function() {
+        if (typeof document.body.classList !== 'undefined') {
+            return function(elt, cls) {
+                elt.classList.add(cls);
+            }
+        } else if (document.body.setAttribute) {
+          return function(elt, cls) {
+            if (!this.hasClass(elt, cls)) {
+              elt.setAttribute('class', this.getClass(elt) + ' ' + cls + ' ');
+            }
+          }
+        } else {
+          return function(elt, cls) {
+            if (!this.hasClass(elt, cls)) {
+              elt.className = this.getClass(elt) + ' ' + cls + ' ';
+            }
+          }
+        }
+      })(),
+      
+      removeClass: (function(){
+        if (typeof document.body.classList !== 'undefined') {
+            return function(elt, cls) {
+                elt.classList.remove(cls);
+            }
+        } else if (document.body.setAttribute) {
+          return function(elt, cls) {
+            elt.setAttribute('class', this.getClass(elt).replace(' ' + cls + ' ', ''));
+          }
+        } else {
+          return function(elt, cls) {
+            elt.className = this.getClass(elt).replace(' ' + cls + ' ', '');
+          }
+        }
+      })(),
+
+      toggleClass: (function(){
+        if (typeof document.body.classList !== 'undefined' && typeof document.body.classList.toggle !== 'undefined' ) {
+            return function(elt, cls) {
+                return elt.classList.toggle(cls);
+            }
+        } else {
+          return function(elt, cls) {
+            if(this.hasClass(elt, cls)) {
+                this.removeClass(elt, cls);
+            } else {
+                this.addClass(elt, cls);
+            }
+          }
+        };
+      })()
+    }
+  })();
+
+//   var expandoButton;
+//   var expandosOpen = false;
+//   var toggleExpandos = function(detailsButton) {
+//     // Toggle expando visibility state.
+//     util.toggleClass(document.body, 'hide-expandos');
+// 
+//     expandosOpen = !expandosOpen;
+// 
+//     expandoButton.innerHTML = expandosOpen ? 'Hide Details' : 'Show Details';
+//   }
+
+  var ready = function() {
+    // expandoButton = document.getElementById('expandButton');
+    // util.on(expandoButton, 'click', toggleExpandos);
+  };
+
+  if (document.readyState !== 'loading') {
+    // Document loaded, go go go!
+    onload();
+  } else {
+    // Wait for document to load.
+    util.on(document, 'DOMContentLoaded', ready);
+  };
+
+})();
+
+</script>
+
+</body>
+</html>

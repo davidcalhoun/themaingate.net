@@ -1,0 +1,544 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="David Calhoun is an American photographer and web developer." name="description">
+  <title>David Calhoun</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-language" content="en" />
+  <meta name="robots" content="all">
+  <meta name="author" content="David Calhoun">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="verify-v1" content="icq5J/6O+loOEB3c47M2MKmXvt+GYiiKf0RtjWrx8aA=">
+
+  <link rel="canonical" href="https://themaingate.net/">
+  <link rel="Shortcut Icon" type="image/ico" href="https://themaingate.net/favicon.ico?v=1">
+
+  <link rel="prefetch" href="https://www.themaingate.net/resume/">
+  <style>
+    body {
+      margin: 3em auto;
+      max-width: 750px;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    h1,
+    h2 {
+      font-weight: 500;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+
+    a {
+      transition: color 250ms cubic-bezier(.17, .67, .83, .67);
+    }
+
+    a,
+    a:visited,
+    a:active {
+      color: #555;
+    }
+
+    a:hover {
+      color: #888;
+    }
+
+    hgroup {
+      margin-bottom: 2rem;
+    }
+
+    hgroup h1 {
+      margin: 0 0 0.25rem;
+    }
+
+    hgroup h1 a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 110%;
+    }
+
+    h2 p {
+      margin: 0;
+    }
+
+    section>h2 {
+      margin-top: 1em;
+    }
+
+    /* Hide the weather widget in the footer if JS is disabled */
+    .no-js footer {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    footer h2 {
+      margin-bottom: 0.25em;
+    }
+
+    #links ul.bullets {
+      list-style-type: square;
+      list-style-position: outside;
+      margin-left: 1rem;
+    }
+
+    #intro h1 {
+      font-size: 2rem;
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    #intro h2 {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+
+    #intro>p {
+      line-height: 1.65rem;
+      font-size: 1.1rem;
+    }
+
+    #meta {
+      margin-top: 2rem;
+    }
+
+    #meta h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    [data-icon]:before {
+      font-family: 'MeteoconsRegular';
+      content: attr(data-icon);
+
+      /* iOS tweaks */
+      display: inline-block;
+      min-width: 70px;
+      text-align: left;
+    }
+
+    #weather p {
+      margin: 0;
+    }
+
+    #weather .city a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #weather .icon {
+      font-size: 70px;
+    }
+
+    #weather .attribution {
+      display: inline-block;
+      width: 90px;
+      height: 21px;
+      background-size: 100%;
+      background-image: url(data:image/png;base64,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);
+    }
+
+    #weather .icon {
+      min-height: 40px;
+    }
+
+    #photo {
+      margin: 0 1.5em 0 0;
+      width: 318px;
+      height: 400px;
+    }
+
+    #links {
+      flex: 1;
+    }
+
+    #links ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    #links li {
+      line-height: 1.5em;
+      margin-bottom: 0.1em;
+    }
+
+
+    [data-lazyload] {
+      position: relative;
+    }
+
+    [data-lazyload],
+    [data-lazyload] img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    img[data-src] {
+      opacity: 0;
+    }
+
+    img[data-placeholder] {
+      opacity: 1;
+      position: absolute;
+    }
+
+    .lazyloaded img[data-src] {
+      -webkit-transition: opacity 1s ease-in;
+      -moz-transition: opacity 1s ease-in;
+      -o-transition: opacity 1s ease-in;
+      -ms-transition: opacity 1s ease-in;
+      transition: opacity 1s ease-in;
+      opacity: 1;
+    }
+
+    .lazyloaded img[data-placeholder] {
+      -webkit-transition: opacity 1s ease-in;
+      -moz-transition: opacity 1s ease-in;
+      -o-transition: opacity 1s ease-in;
+      -ms-transition: opacity 1s ease-in;
+      transition: opacity 1s ease-in;
+      opacity: 0;
+    }
+
+
+    @media all and (max-width: 750px) {
+      body {
+        margin: 1em 0.5em;
+      }
+
+      #photo {
+        width: 30%;
+      }
+
+      #photo [data-lazyload] {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <header role="banner">
+
+  </header>
+
+  <main role="main" itemscope itemtype="https://schema.org/Person">
+    <figure id="photo" role="complementary" data-lazyload>
+      <img data-placeholder alt="Placeholder cartoon of David Calhoun"
+        src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAyMDAxMDkwNC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NzdweCIgaGVpZ2h0PSI2MDJweCIgdmlld0JveD0iMCAwIDQ3NzAgNjAyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CjxnIGlkPSJsYXllcjEwMSIgZmlsbD0iIzE3MmE1MiIgc3Ryb2tlPSJub25lIj4KIDxwYXRoIGQ9Ik0wIDMwMTAgbDAgLTMwMTAgMjM4NSAwIDIzODUgMCAwIDMwMTAgMCAzMDEwIC0yMzg1IDAgLTIzODUgMCAwIC0zMDEweiIvPgogPC9nPgo8ZyBpZD0ibGF5ZXIxMDIiIGZpbGw9IiM1MjNkMmEiIHN0cm9rZT0ibm9uZSI+CiA8cGF0aCBkPSJNMjM2MCA1MTM1IGMtNDEgLTQyIC0xNTIgLTE0NiAtMjQ2IC0yMzIgbC0xNzEgLTE1NSAtMTE1IC0yNDcgYy04MCAtMTY5IC0xMjYgLTI4MyAtMTQ5IC0zNjQgLTE4IC02NCAtMzcgLTExNiAtNDEgLTExNSAtNSAyIC0zNyA1NCAtNzEgMTE3IGwtNjIgMTEzIC03NDUgMjU0IGMtNDEwIDE0MCAtNzQ4IDI1NCAtNzUyIDI1NCAtNSAwIC04IC0xMDcxIC04IC0yMzgwIGwwIC0yMzgwIDIzODUgMCAyMzg1IDAgMCAyMjc1IGMwIDE1MTUgLTMgMjI3NSAtMTAgMjI3NSAtNiAwIC0yNTMgLTEyMSAtNTQ5IC0yNzAgLTM1NiAtMTc4IC01NDEgLTI3NSAtNTQ1IC0yODcgLTIgLTEwIC0xNyAtNTcgLTMxIC0xMDYgbC0yNiAtODcgLTg3IC00MyBjLTgzIC00MiAtMTIyIC00OSAtMTIyIC0yNCAwIDcgNyA3MyAxNCAxNDcgMTEgMTAyIDExIDEzOSAyIDE1MSAtMjkgNDIgLTk3MSAxMTc5IC05NzYgMTE3OSAtMyAwIC0zOSAtMzQgLTgwIC03NXoiLz4KIDwvZz4KPGcgaWQ9ImxheWVyMTAzIiBmaWxsPSIjN2E3YTU0IiBzdHJva2U9Im5vbmUiPgogPHBhdGggZD0iTTIzNjAgNTEzNSBjLTQxIC00MiAtMTUyIC0xNDYgLTI0NiAtMjMyIGwtMTcxIC0xNTUgLTExNSAtMjQ3IGMtODAgLTE2OSAtMTI2IC0yODMgLTE0OSAtMzY0IC0xOCAtNjQgLTM3IC0xMTYgLTQxIC0xMTUgLTUgMiAtMzcgNTQgLTcxIDExNyBsLTYyIDExMyAtNzQ1IDI1NCBjLTQxMCAxNDAgLTc0OCAyNTQgLTc1MiAyNTQgLTUgMCAtOCAtMTA3MSAtOCAtMjM4MCBsMCAtMjM4MCAyMzg1IDAgMjM4NSAwIDAgMjI3NSBjMCAxNTE1IC0zIDIyNzUgLTEwIDIyNzUgLTYgMCAtMjUzIC0xMjEgLTU0OSAtMjcwIC0zNTYgLTE3OCAtNTQxIC0yNzUgLTU0NSAtMjg3IC0yIC0xMCAtMTcgLTU3IC0zMSAtMTA2IGwtMjYgLTg3IC04NyAtNDMgYy04MyAtNDIgLTEyMiAtNDkgLTEyMiAtMjQgMCA3IDcgNzMgMTQgMTQ3IDExIDEwMiAxMSAxMzkgMiAxNTEgLTI5IDQyIC05NzEgMTE3OSAtOTc2IDExNzkgLTMgMCAtMzkgLTM0IC04MCAtNzV6IG0xMTY5IC0yNjIwIGM0MCAtOTkgNzggLTE4NSA4NCAtMTkyIDE0IC0xMyAxNzggLTY1IDE4NiAtNTggMiAzIC05IDU3IC0yNiAxMjEgLTQyIDE1OCAtMTggMTI5IDUzIC02NiBsNTYgLTE1NSAtNyAtMzQwIC02IC0zNDAgLTEyNSAtMzE1IGMtNjggLTE3MyAtMTI4IC0zMjAgLTEzMiAtMzI2IC00IC03IC0xNjcgLTkxIC0zNjEgLTE4OSBsLTM1NSAtMTc3IC00ODUgLTMgLTQ4NiAtMyAtNTAgMjUgYy0xODggOTUgLTMyOSAxNzkgLTM2MyAyMTkgLTIwIDIzIC0xMjMgMTMyIC0yMjkgMjQxIGwtMTkxIDE5OSA1OCAxMjcgNTkgMTI4IC0xNCAxNDIgYy04IDc4IC0xNyAxNjkgLTIxIDIwMiAtNSA0NSA1IDE0MSA0MSAzOTAgMjYgMTgyIDQ5IDMzMiA1MSAzMzQgMiAyIDYgMiA4IDAgMyAtMiAzOSAtMTU3IDgxIC0zNDQgNzUgLTMzNiA3NyAtMzQyIDE1NyAtNTMwIDQ1IC0xMDQgODQgLTE5MyA4NyAtMTk3IDcgLTcgMTQ3NyAyNSAxNDg0IDMyIDIgMyAzNCAxMjQgNzAgMjcwIDM2IDE0NiAxMTYgNDIzIDE3NyA2MTUgMTI2IDM5OSAxMTkgMzc5IDEyNCAzNzQgMiAtMiAzNiAtODUgNzUgLTE4NHoiLz4KIDwvZz4KPGcgaWQ9ImxheWVyMTA0IiBmaWxsPSIjZGFhY2FjIiBzdHJva2U9Im5vbmUiPgogPHBhdGggZD0iTTIzNjAgNTEzNSBjLTQxIC00MiAtMTUyIC0xNDYgLTI0NiAtMjMxIGwtMTcxIC0xNTYgLTExMyAtMjQwIGMtODIgLTE3NSAtMTIzIC0yNzYgLTE1MiAtMzc2IC0yMiAtNzUgLTQ0IC0xNTAgLTQ4IC0xNjUgLTUgLTE1IC03MiAtMTQ5IC0xNTAgLTI5NyBsLTE0MSAtMjcwIC0zNCAtNDU2IGMtMTkgLTI1MSAtMzMgLTQ2MCAtMzAgLTQ2NCAyIC0zIDM4IC0xNTkgODAgLTM0NiA3NSAtMzM1IDc3IC0zNDEgMTU3IC01MjkgNDUgLTEwNCA4NCAtMTkzIDg3IC0xOTcgNyAtNyAxNDc3IDI1IDE0ODQgMzIgMiAzIDMyIDExOCA2NiAyNTUgNTMgMjE0IDI4MiA5NzYgMzAwIDk5NyAzIDQgNDAgLTc2IDgxIC0xNzggNDEgLTEwMiA3OSAtMTg5IDg1IC0xOTQgMTQgLTExIDE3OCAtNjEgMTgzIC01NSA2IDYgLTE1OSA2NTcgLTE3MSA2NzIgLTUgNyAtNTEgMzUgLTEwMSA2MiBsLTkyIDUwIC0zMyAxNjkgLTMzIDE2OSAyNiAyODQgYzE1IDE1NiAyOSAyOTggMzEgMzE1IDUgMjggLTM1IDc4IC00ODUgNjI1IC0yNjkgMzI2IC00OTMgNTk1IC00OTggNTk3IC00IDEgLTQxIC0zMiAtODIgLTczeiIvPgogPC9nPgoKPC9zdmc+">
+      <img data-src="https://www.themaingate.net/david-calhoun.jpg?v=1" itemprop="image" alt="Photo of David Calhoun">
+    </figure>
+
+    <section id="links">
+      <header id="intro">
+        <hgroup>
+          <h1><a href="/"><span itemprop="name">David Calhoun</span></a></h1>
+          <h2 itemprop="description">
+            <p><span itemprop="jobTitle">Front-end developer</span> and <span itemprop="jobTitle">photographer</span>.
+            </p>
+            <p><em><b>Not</b> currently looking</em> for new opportunities, thank you!</p>
+          </h2>
+        </hgroup>
+      </header>
+
+      <section id="meta">
+        <!--       <h2>Skills</h2>
+      <ul>
+        <li><em>Frontend</em>: JavaScript (ES6+), HTML5, CSS3, React.js, Webpack and Rollup, Jest, React Testing Library, Material-UI, Storybook</li>
+        <li><em>Backend</em>: Node.js, Postgres, Redis</li>
+      </ul> -->
+
+        <h2>Work</h2>
+        <ul>
+          <li><a href="https://themaingate.net/resume/" itemprop="url">Résumé</a></li>
+          <li><a href="https://www.linkedin.com/in/davidcalhoun" target="_blank" itemprop="sameAs"
+              rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/davidcalhoun" target="_blank" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">Github</a></li>
+          <li>📷 Photography: <a href="https://www.youtube.com/channel/UCg5jVvaChTjkL74IQ334FzQ" itemprop="url sameAs"
+              target="_blank" rel="noopener noreferrer">YouTube</a> | <a href="https://davidcalhounphotography.com"
+              itemprop="url sameAs" target="_blank" rel="noopener noreferrer">Website</a></li>
+        </ul>
+
+        <h2>Notable Projects</h2>
+        <ul class="bullets">
+          <li><a href="https://github.com/davidcalhoun/react-hover-slideshow" target="_blank"
+              rel="noopener noreferrer">react-hover-slideshow</a> - built as an interactive component for my photography
+            website, and also a way to wrap my head around React Hooks.</li>
+          <li><a href="https://github.com/davidcalhoun/jstoxml" target="_blank" rel="noopener noreferrer">jstoxml</a>
+            [~120k
+            downloads per month] - helper to convert JSON to XML for RSS, podcast feeds, AMP, etc. This has turned out
+            to be my most widely-used code!</li>
+          <li><a href="https://github.com/davidcalhoun/tle.js" target="_blank" rel="noopener noreferrer">tle.js</a> - a
+            helper
+            for plotting in-space satellite positions and tracks. Powers my side project <a
+              href="https://www.trackthatsatellite.com" target="_blank" rel="noopener noreferrer">Track That
+              Satellite</a>.</li>
+          <li><a href="https://github.com/davidcalhoun/little-time" target="_blank"
+              rel="noopener noreferrer">little-time</a> -
+            frustrated by the filesize of moment.js, I set out to create this alternative, a tiny time formatter</li>
+        </ul>
+
+        <h2>Media</h2>
+        <ul>
+          <li><a href="https://davidbcalhoun.com/" itemprop="sameAs" target="_blank" rel="noopener noreferrer">Blog</a>
+          </li>
+          <li><a href="https://twitter.com/franksvalli" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">@<span itemprop="alternateName">franksvalli</span></a></li>
+          <li><a href="https://www.youtube.com/user/davidbcalhoun" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://www.flickr.com/photos/franksvalli/" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">Flickr</a></li>
+          <li><a href="https://www.instagram.com/davidcalhounphotography/" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://500px.com/davidcalhoun" itemprop="sameAs" target="_blank"
+              rel="noopener noreferrer">500px</a></li>
+          <li><a
+              href="https://www.google.com/maps/contrib/106344764360116655200/photos/@41.2904169,-150.7105385,3z/data=!4m3!8m2!3m1!1e1"
+              itemprop="sameAs" target="_blank" rel="noopener noreferrer">360 Streetview Photos</a></li>
+        </ul>
+
+        <h2>Contact</h2>
+        <ul>
+          <li><span itemprop="email">david.b.calhoun+mg@gmail.com</span></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script>
+
+    // Polyfills and utils
+
+    // Promise polyfill
+    // https://github.com/taylorhakes/promise-polyfill/blob/master/promise.min.js
+    !function (e) { function n() { } function t(e, n) { return function () { e.apply(n, arguments) } } function o(e) { if ("object" != typeof this) throw new TypeError("Promises must be constructed via new"); if ("function" != typeof e) throw new TypeError("not a function"); this._state = 0, this._handled = !1, this._value = void 0, this._deferreds = [], s(e, this) } function i(e, n) { for (; 3 === e._state;)e = e._value; return 0 === e._state ? void e._deferreds.push(n) : (e._handled = !0, void o._immediateFn(function () { var t = 1 === e._state ? n.onFulfilled : n.onRejected; if (null === t) return void (1 === e._state ? r : u)(n.promise, e._value); var o; try { o = t(e._value) } catch (i) { return void u(n.promise, i) } r(n.promise, o) })) } function r(e, n) { try { if (n === e) throw new TypeError("A promise cannot be resolved with itself."); if (n && ("object" == typeof n || "function" == typeof n)) { var i = n.then; if (n instanceof o) return e._state = 3, e._value = n, void f(e); if ("function" == typeof i) return void s(t(i, n), e) } e._state = 1, e._value = n, f(e) } catch (r) { u(e, r) } } function u(e, n) { e._state = 2, e._value = n, f(e) } function f(e) { 2 === e._state && 0 === e._deferreds.length && o._immediateFn(function () { e._handled || o._unhandledRejectionFn(e._value) }); for (var n = 0, t = e._deferreds.length; n < t; n++)i(e, e._deferreds[n]); e._deferreds = null } function c(e, n, t) { this.onFulfilled = "function" == typeof e ? e : null, this.onRejected = "function" == typeof n ? n : null, this.promise = t } function s(e, n) { var t = !1; try { e(function (e) { t || (t = !0, r(n, e)) }, function (e) { t || (t = !0, u(n, e)) }) } catch (o) { if (t) return; t = !0, u(n, o) } } var a = setTimeout; o.prototype["catch"] = function (e) { return this.then(null, e) }, o.prototype.then = function (e, t) { var o = new this.constructor(n); return i(this, new c(e, t, o)), o }, o.all = function (e) { var n = Array.prototype.slice.call(e); return new o(function (e, t) { function o(r, u) { try { if (u && ("object" == typeof u || "function" == typeof u)) { var f = u.then; if ("function" == typeof f) return void f.call(u, function (e) { o(r, e) }, t) } n[r] = u, 0 === --i && e(n) } catch (c) { t(c) } } if (0 === n.length) return e([]); for (var i = n.length, r = 0; r < n.length; r++)o(r, n[r]) }) }, o.resolve = function (e) { return e && "object" == typeof e && e.constructor === o ? e : new o(function (n) { n(e) }) }, o.reject = function (e) { return new o(function (n, t) { t(e) }) }, o.race = function (e) { return new o(function (n, t) { for (var o = 0, i = e.length; o < i; o++)e[o].then(n, t) }) }, o._immediateFn = "function" == typeof setImmediate && function (e) { setImmediate(e) } || function (e) { a(e, 0) }, o._unhandledRejectionFn = function (e) { "undefined" != typeof console && console && console.warn("Possible Unhandled Promise Rejection:", e) }, o._setImmediateFn = function (e) { o._immediateFn = e }, o._setUnhandledRejectionFn = function (e) { o._unhandledRejectionFn = e }, "undefined" != typeof module && module.exports ? module.exports = o : e.Promise || (e.Promise = o) }(this);
+
+    // window.fetch polyfill
+    // https://github.com/github/fetch
+    !function (t) { "use strict"; function e(t) { if ("string" != typeof t && (t += ""), /[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(t)) throw new TypeError("Invalid character in header field name"); return t.toLowerCase() } function r(t) { return "string" != typeof t && (t += ""), t } function o(t) { var e = { next: function () { var e = t.shift(); return { done: void 0 === e, value: e } } }; return y.iterable && (e[Symbol.iterator] = function () { return e }), e } function n(t) { this.map = {}, t instanceof n ? t.forEach(function (t, e) { this.append(e, t) }, this) : t && Object.getOwnPropertyNames(t).forEach(function (e) { this.append(e, t[e]) }, this) } function s(t) { return t.bodyUsed ? Promise.reject(new TypeError("Already read")) : void (t.bodyUsed = !0) } function i(t) { return new Promise(function (e, r) { t.onload = function () { e(t.result) }, t.onerror = function () { r(t.error) } }) } function a(t) { var e = new FileReader; return e.readAsArrayBuffer(t), i(e) } function h(t) { var e = new FileReader; return e.readAsText(t), i(e) } function u() { return this.bodyUsed = !1, this._initBody = function (t) { if (this._bodyInit = t, "string" == typeof t) this._bodyText = t; else if (y.blob && Blob.prototype.isPrototypeOf(t)) this._bodyBlob = t; else if (y.formData && FormData.prototype.isPrototypeOf(t)) this._bodyFormData = t; else if (y.searchParams && URLSearchParams.prototype.isPrototypeOf(t)) this._bodyText = "" + t; else if (t) { if (!y.arrayBuffer || !ArrayBuffer.prototype.isPrototypeOf(t)) throw Error("unsupported BodyInit type") } else this._bodyText = ""; this.headers.get("content-type") || ("string" == typeof t ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : y.searchParams && URLSearchParams.prototype.isPrototypeOf(t) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8")) }, y.blob ? (this.blob = function () { var t = s(this); if (t) return t; if (this._bodyBlob) return Promise.resolve(this._bodyBlob); if (this._bodyFormData) throw Error("could not read FormData body as blob"); return Promise.resolve(new Blob([this._bodyText])) }, this.arrayBuffer = function () { return this.blob().then(a) }, this.text = function () { var t = s(this); if (t) return t; if (this._bodyBlob) return h(this._bodyBlob); if (this._bodyFormData) throw Error("could not read FormData body as text"); return Promise.resolve(this._bodyText) }) : this.text = function () { var t = s(this); return t ? t : Promise.resolve(this._bodyText) }, y.formData && (this.formData = function () { return this.text().then(p) }), this.json = function () { return this.text().then(JSON.parse) }, this } function f(t) { var e = t.toUpperCase(); return b.indexOf(e) > -1 ? e : t } function d(t, e) { e = e || {}; var r = e.body; if (d.prototype.isPrototypeOf(t)) { if (t.bodyUsed) throw new TypeError("Already read"); this.url = t.url, this.credentials = t.credentials, e.headers || (this.headers = new n(t.headers)), this.method = t.method, this.mode = t.mode, r || (r = t._bodyInit, t.bodyUsed = !0) } else this.url = t; if (this.credentials = e.credentials || this.credentials || "omit", (e.headers || !this.headers) && (this.headers = new n(e.headers)), this.method = f(e.method || this.method || "GET"), this.mode = e.mode || this.mode || null, this.referrer = null, ("GET" === this.method || "HEAD" === this.method) && r) throw new TypeError("Body not allowed for GET or HEAD requests"); this._initBody(r) } function p(t) { var e = new FormData; return t.trim().split("&").forEach(function (t) { if (t) { var r = t.split("="), o = r.shift().replace(/\+/g, " "), n = r.join("=").replace(/\+/g, " "); e.append(decodeURIComponent(o), decodeURIComponent(n)) } }), e } function c(t) { var e = new n, r = (t.getAllResponseHeaders() || "").trim().split("\n"); return r.forEach(function (t) { var r = t.trim().split(":"), o = r.shift().trim(), n = r.join(":").trim(); e.append(o, n) }), e } function l(t, e) { e || (e = {}), this.type = "default", this.status = e.status, this.ok = this.status >= 200 && this.status < 300, this.statusText = e.statusText, this.headers = e.headers instanceof n ? e.headers : new n(e.headers), this.url = e.url || "", this._initBody(t) } if (!t.fetch) { var y = { searchParams: "URLSearchParams" in t, iterable: "Symbol" in t && "iterator" in Symbol, blob: "FileReader" in t && "Blob" in t && function () { try { return new Blob, !0 } catch (t) { return !1 } }(), formData: "FormData" in t, arrayBuffer: "ArrayBuffer" in t }; n.prototype.append = function (t, o) { t = e(t), o = r(o); var n = this.map[t]; n || (n = [], this.map[t] = n), n.push(o) }, n.prototype["delete"] = function (t) { delete this.map[e(t)] }, n.prototype.get = function (t) { var r = this.map[e(t)]; return r ? r[0] : null }, n.prototype.getAll = function (t) { return this.map[e(t)] || [] }, n.prototype.has = function (t) { return this.map.hasOwnProperty(e(t)) }, n.prototype.set = function (t, o) { this.map[e(t)] = [r(o)] }, n.prototype.forEach = function (t, e) { Object.getOwnPropertyNames(this.map).forEach(function (r) { this.map[r].forEach(function (o) { t.call(e, o, r, this) }, this) }, this) }, n.prototype.keys = function () { var t = []; return this.forEach(function (e, r) { t.push(r) }), o(t) }, n.prototype.values = function () { var t = []; return this.forEach(function (e) { t.push(e) }), o(t) }, n.prototype.entries = function () { var t = []; return this.forEach(function (e, r) { t.push([r, e]) }), o(t) }, y.iterable && (n.prototype[Symbol.iterator] = n.prototype.entries); var b = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"]; d.prototype.clone = function () { return new d(this) }, u.call(d.prototype), u.call(l.prototype), l.prototype.clone = function () { return new l(this._bodyInit, { status: this.status, statusText: this.statusText, headers: new n(this.headers), url: this.url }) }, l.error = function () { var t = new l(null, { status: 0, statusText: "" }); return t.type = "error", t }; var m = [301, 302, 303, 307, 308]; l.redirect = function (t, e) { if (-1 === m.indexOf(e)) throw new RangeError("Invalid status code"); return new l(null, { status: e, headers: { location: t } }) }, t.Headers = n, t.Request = d, t.Response = l, t.fetch = function (t, e) { return new Promise(function (r, o) { function n() { return "responseURL" in i ? i.responseURL : /^X-Request-URL:/im.test(i.getAllResponseHeaders()) ? i.getResponseHeader("X-Request-URL") : void 0 } var s; s = d.prototype.isPrototypeOf(t) && !e ? t : new d(t, e); var i = new XMLHttpRequest; i.onload = function () { var t = { status: i.status, statusText: i.statusText, headers: c(i), url: n() }, e = "response" in i ? i.response : i.responseText; r(new l(e, t)) }, i.onerror = function () { o(new TypeError("Network request failed")) }, i.ontimeout = function () { o(new TypeError("Network request failed")) }, i.open(s.method, s.url, !0), "include" === s.credentials && (i.withCredentials = !0), "responseType" in i && y.blob && (i.responseType = "blob"), s.headers.forEach(function (t, e) { i.setRequestHeader(e, t) }), i.send(void 0 === s._bodyInit ? null : s._bodyInit) }) }, t.fetch.polyfill = !0 } }("undefined" != typeof self ? self : this);
+
+
+    if (!Array.isArray) {
+      Array.isArray = function (arg) {
+        return Object.prototype.toString.call(arg) === '[object Array]';
+      };
+    }
+
+  </script>
+
+
+  <script>
+
+    // Main client script
+
+    (function () {
+
+      // Generic super small IIFE DOM utilities (and more) with fallbacks.
+      var util = (function () {
+        return {
+          debounce: function (fn, delay) {
+            var timer = null;
+            return function () {
+              var context = this, args = arguments;
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                fn.apply(context, args);
+              }, delay);
+            };
+          },
+
+          // Adds an event listener to the DOM
+          on: (function () {
+            if (window.addEventListener) {
+              return function (elt, event, fn, useCapture) {
+                useCapture = useCapture || false;
+                elt.addEventListener(event, fn, useCapture);
+              }
+            } else if (window.attachEvent) {
+              return function (elt, event, fn) {
+                elt.attachEvent('on' + event, fn);
+              }
+            } else {
+              // DOM1
+              return function (elt, event, fn) {
+                elt['on' + event] = fn;
+              }
+            }
+          })(),
+
+          preventDefault: (function () {
+            if (window.event) {
+              return function (e) {
+                window.event.returnValue = false;
+              }
+            } else {
+              return function (e) {
+                e.preventDefault();
+              }
+            }
+          })(),
+
+          getClass: (function () {
+            if (document.getAttribute) {
+              return function (elt) {
+                return elt.getAttribute('class');
+              }
+            } else {
+              return function (elt) {
+                return elt.className;
+              }
+            }
+          })(),
+
+          hasClass: function (elt, cls) {
+            if (typeof document.body.classList !== 'undefined') {
+              if (!elt.classList) {
+                return false;
+              }
+              return elt.classList.contains(cls);
+            } else {
+              return !!this.getClass(elt).match((new RegExp(' ' + cls + ' ')));
+            }
+          },
+
+          addClass: (function () {
+            if (typeof document.body.classList !== 'undefined') {
+              return function (elt, cls) {
+                elt.classList.add(cls);
+              }
+            } else if (document.body.setAttribute) {
+              return function (elt, cls) {
+                if (!this.hasClass(elt, cls)) {
+                  elt.setAttribute('class', this.getClass(elt) + ' ' + cls + ' ');
+                }
+              }
+            } else {
+              return function (elt, cls) {
+                if (!this.hasClass(elt, cls)) {
+                  elt.className = this.getClass(elt) + ' ' + cls + ' ';
+                }
+              }
+            }
+          })(),
+
+          removeClass: (function () {
+            if (typeof document.body.classList !== 'undefined') {
+              return function (elt, cls) {
+                elt.classList.remove(cls);
+              }
+            } else if (document.body.setAttribute) {
+              return function (elt, cls) {
+                elt.setAttribute('class', this.getClass(elt).replace(' ' + cls + ' ', ''));
+              }
+            } else {
+              return function (elt, cls) {
+                elt.className = this.getClass(elt).replace(' ' + cls + ' ', '');
+              }
+            }
+          })(),
+
+          toggleClass: (function () {
+            if (typeof document.body.classList !== 'undefined' && typeof document.body.classList.toggle !== 'undefined') {
+              return function (elt, cls) {
+                return elt.classList.toggle(cls);
+              }
+            } else {
+              return function (elt, cls) {
+                if (this.hasClass(elt, cls)) {
+                  this.removeClass(elt, cls);
+                } else {
+                  this.addClass(elt, cls);
+                }
+              }
+            };
+          })()
+        }
+      })();
+
+
+      function lazyloadImages() {
+        util.on(document.body, 'load', function (e) {
+          if (!e.target.dataset.src) return;
+
+          //e.target.classList.add('lazyloaded');
+          util.addClass(e.target.parentElement, 'lazyloaded');
+        }, true);
+
+        var imgs = document.querySelectorAll('img[data-src]');
+
+        Array.prototype.forEach.call(imgs, function (img) {
+          img.src = img.dataset.src;
+
+        });
+      };
+
+
+      function ready() {
+        util.toggleClass(document.body.parentElement, 'no-js');
+
+        lazyloadImages();
+      };
+
+      if (document.readyState !== 'loading') {
+        // Document loaded, go go go!
+        ready();
+      } else {
+        // Wait for document to load.
+        util.on(document, 'DOMContentLoaded', ready);
+      };
+
+    })();
+
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-5530615-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+
+</html>

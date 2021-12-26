@@ -28,9 +28,17 @@
       font-weight: 500;
     }
 
-    main {
+    body > header {
       display: flex;
       flex-direction: row;
+    }
+
+    body > header li {
+      list-style: none;
+    }
+
+    body > header ul {
+      padding: 0;
     }
 
     a {
@@ -144,51 +152,59 @@
         width: 30%;
         height: 30%;
       }
+
+      body > header {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+
+      header > section {
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+      }
     }
   </style>
 
 </head>
 
 <body>
-
-
   <header role="banner">
+    <img id="photo" src="https://www.themaingate.net/david-calhoun.jpg?v=2" itemprop="image" alt="David Calhoun" width="375" height="388.5">
 
-  </header>
-
-  <main role="main" itemscope itemtype="https://schema.org/Person">
-    <img id="photo" src="https://www.themaingate.net/david-calhoun.jpg?v=2" itemprop="image" alt="David Calhoun" width="500" height="518">
-
-    <section id="links">
-      <header id="intro">
-        <hgroup>
-          <h1><a href="/"><span itemprop="name">David Calhoun</span></a></h1>
-          <h2 itemprop="description">
-            <p><span itemprop="jobTitle">Front-end developer</span> and <span itemprop="jobTitle">photographer</span>.
-            </p>
-            <p><em><b>Not</b> currently looking</em> for new opportunities, thank you!</p>
-          </h2>
-        </hgroup>
-      </header>
-
+    <section>
+      <hgroup>
+        <h1><a href="/"><span itemprop="name">David Calhoun</span></a></h1>
+        <h2 itemprop="description">
+          <p><span itemprop="jobTitle">Front-end developer</span> and <span itemprop="jobTitle">photographer</span>.</p>
+          <br/>
+          <p><em><b>Not</b> currently looking</em> for new opportunities, thank you!</p>
+        </h2>
+      </hgroup>
+  
       <section id="meta">
-        <h2>Work</h2>
         <ul>
           <li><a href="https://themaingate.net/resume/" itemprop="url">Résumé</a></li>
           <li><a href="https://www.linkedin.com/in/davidcalhoun" target="_blank" itemprop="sameAs"
               rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="https://github.com/davidcalhoun" target="_blank" itemprop="sameAs" target="_blank"
               rel="noopener noreferrer">Github</a></li>
-          <li>📷 Photography: <a href="https://www.youtube.com/channel/UCg5jVvaChTjkL74IQ334FzQ" itemprop="url sameAs"
-              target="_blank" rel="noopener noreferrer">YouTube</a> | <a href="https://davidcalhounphotography.com"
-              itemprop="url sameAs" target="_blank" rel="noopener noreferrer">Website</a></li>
+          <li>📷 Photography: <a href="https://davidcalhounphotography.com"
+              itemprop="url sameAs" target="_blank" rel="noopener noreferrer">Website</a> and <a href="https://www.youtube.com/channel/UCg5jVvaChTjkL74IQ334FzQ" itemprop="url sameAs"
+              target="_blank" rel="noopener noreferrer">YouTube</a></li>
         </ul>
+      </section>
+    </section>
 
+  </header>
+  <main role="main" itemscope itemtype="https://schema.org/Person">
+    <section id="links">
         <h2>Notable Projects</h2>
         <ul class="bullets">
-          <li><a href="https://github.com/davidcalhoun/react-hover-slideshow" target="_blank"
-              rel="noopener noreferrer">react-hover-slideshow</a> - built as an interactive component for my photography
-            website, and also a way to wrap my head around React Hooks.</li>
           <li><a href="https://github.com/davidcalhoun/jstoxml" target="_blank" rel="noopener noreferrer">jstoxml</a>
             - helper to convert JSON to XML for RSS, podcast feeds, AMP, etc. This has turned out
             to be my most widely-used code!</li>
@@ -197,9 +213,9 @@
             for plotting in-space satellite positions and tracks. Powers my side project <a
               href="https://www.trackthatsatellite.com" target="_blank" rel="noopener noreferrer">Track That
               Satellite</a>.</li>
-          <li><a href="https://github.com/davidcalhoun/little-time" target="_blank"
-              rel="noopener noreferrer">little-time</a> -
-            frustrated by the filesize of moment.js, I set out to create this alternative, a tiny time formatter</li>
+          <li><a href="https://github.com/davidcalhoun/react-hover-slideshow" target="_blank"
+                rel="noopener noreferrer">react-hover-slideshow</a> - built as an interactive component for my photography
+              website, and also a way to wrap my head around React Hooks.</li>
         </ul>
 
         <h2>Media</h2>

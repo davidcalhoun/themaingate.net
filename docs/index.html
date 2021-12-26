@@ -60,7 +60,7 @@
     }
 
     hgroup h1 {
-      margin: 0 0 0.25rem;
+      margin: 0 0 0.1rem;
     }
 
     hgroup h1 a {
@@ -71,6 +71,7 @@
     h2 {
       margin: 0;
       font-size: 110%;
+      line-height: 1.5rem;
     }
 
     h2 p {
@@ -164,28 +165,30 @@
         width: 100%;
       }
 
-      h1 {
+      hgroup h1 {
         text-align: center;
+        margin-bottom: 1rem;
       }
     }
   </style>
 
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Person">
   <header role="banner">
-    <img id="photo" src="https://www.themaingate.net/david-calhoun.jpg?v=2" itemprop="image" alt="David Calhoun" width="375" height="388.5">
-
+    <img id="photo" src="https://www.themaingate.net/david-calhoun.jpg?v=2" itemprop="image" alt="David Calhoun portrait" width="375" height="388.5">
     <section>
       <hgroup>
         <h1><a href="/"><span itemprop="name">David Calhoun</span></a></h1>
         <h2 itemprop="description">
-          <p><span itemprop="jobTitle">Front-end developer</span> and <span itemprop="jobTitle">photographer</span>.</p>
+          <p><span itemprop="jobTitle">Front-end developer</span> and <span itemprop="jobTitle">photographer</span></p>
+          <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            Based in <span itemprop="addressLocality">Raleigh</span>, <span itemprop="addressRegion">NC</span>, USA
+          </p>
           <br/>
           <p><em><b>Not</b> currently looking</em> for new opportunities, thank you!</p>
         </h2>
       </hgroup>
-  
       <section id="meta">
         <ul>
           <li><a href="https://themaingate.net/resume/" itemprop="url">Résumé</a></li>
@@ -201,7 +204,7 @@
     </section>
 
   </header>
-  <main role="main" itemscope itemtype="https://schema.org/Person">
+  <main role="main">
     <section id="links">
         <h2>Notable Projects</h2>
         <ul class="bullets">

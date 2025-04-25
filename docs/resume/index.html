@@ -13,6 +13,10 @@
   <link rel="canonical" href="//themaingate.net/resume/">
   <link rel="Shortcut Icon" type="image/ico" href="//themaingate.net/favicon.ico">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <!-- HTML5 enabling script -->
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
@@ -58,7 +62,13 @@
     
     html {margin: 0 2%;}
     body {
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+      /* Font settings via https://fonts.google.com/selection/embed */
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+
       color: #444;
       max-width: 800px;
       margin: 2em auto 3em auto;
@@ -78,8 +88,8 @@
     a:focus {
       border-bottom: 1px solid #8c8c8c;
     }
-    h1 { font-size: 300%; font-weight: bold; }
-    h2 { font-size: 1.2rem; }
+    h1 { flex: 1; font-size: 300%; font-weight: bold; padding-right: 1.5rem; }
+    h2 { flex: 0.5; font-size: 1.2rem; flex-basis: 100px; }
     header h1 { color: #333; }
     header h1, header h2 { display: inline; }
     header h2 {color: #757575; text-transform: lowercase; margin-left: 0.25rem;}
@@ -114,14 +124,9 @@
       margin-top: 0.75em;
     }
 
-    .hide-expandos .experience { margin: 0.25em 0 0; }
-    body:not(.hide-expandos) .experience:not(:first-child) { margin: 0.75em 0 0; }
+    .experience { margin: 0.25em 0 0; }
+    .experience:not(:first-child) { margin: 1.5em 0 0; }
     .experience ul { margin: 0 0 0 1em; }
-    .experience h3 {
-      display: inline;
-      padding-right: 0.5rem;
-      min-width: 13rem;
-    }
 
     .experience li {
       list-style-type: square;
@@ -148,6 +153,10 @@
       padding-left: 0.5rem;
     }
 
+    section h2 {
+      font-weight: bold;
+    }
+
     .experience {
       position: relative;
     }
@@ -155,7 +164,7 @@
     .experience:before {
       content: '';
       position: absolute;
-      top: 0.6rem;
+      top: 0.8rem;
       left: -0.78rem;
       display: inline-block;
       background-color: transparent;
@@ -208,26 +217,10 @@
     }
     
     /* Mobile overrides */
-    @media only screen and (max-width: 800px) {
-        .job-history .period {
-          display: block;
-        }
-
-        .pdf {
-          background-size: 30px;
-          width: 30px;
-          height: 30px;
-          position: absolute;
-        }
-    }
     @media only screen and (max-width: 480px) {
         body { max-width: 97%; margin: 1em 0; }
         h1 { font-size: 200%; }
         header h1, header h2 { display: block; }
-        .job-history .period {
-          display: block;
-          line-height: 130%;
-        }
     }
 
     .printOnly {
@@ -243,9 +236,15 @@
     }
 
     .period {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 100%;
       font-size: 1.2rem;
       font-weight: bold;
       letter-spacing: 0.01rem;
+      padding-left: 0.2rem;
     }
 
     .summary {
@@ -257,6 +256,14 @@
       color: rgb(100, 100, 100);
       font-size: 0.85rem;
       margin-left: 0.1rem;
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .subSummary li {
+      list-style: square;
+      list-style-position: inside;
     }
   </style>
 </head>
@@ -279,85 +286,89 @@
 <header role="banner" class="vcard">
   <hgroup>
     <h1 class="fn" itemprop="name"><span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span></h1>
-    <h2><span itemprop="jobTitle">Frontend Web Developer</span></h2>
+    <h2><span itemprop="jobTitle">Senior frontend Web Developer working remotely from Raleigh, NC</h2>
   </hgroup>
   <section>
-    <ul class="introBullets">
-      <li>Email: <span itemprop="email">david.b.calhoun+mg@gmail.com</span></li>
-      <li>Website: <a href="//themaingate.net" class="url" itemprop="url">themaingate.net</a></li>
-    </ul>
-    <ul class="introBullets">
-      <li>Github: <a href="//github.com/davidcalhoun">github.com/davidcalhoun</a></li>
-      <li>Linkedin: <a href="//www.linkedin.com/in/davidcalhoun" class="url">linkedin.com/in/davidcalhoun</a></li>
+    <span itemprop="email">david.b.calhoun+mg@gmail.com</span> - <a href="//themaingate.net">themaingate.net</a></span>
+    <ul class="subSummary">
+      <li>Summary: Expert frontend engineer with experience building performant, scalable web apps. Proven leader of teams in remote environments, with a focus on data visualization, UI architecture, and modern JS frameworks.</li>
+      <li>Skills: React, Next.js, TypeScript, Redux, deck.gl, MUI, Node.js, Playwright, Storybook, Yarn, Jest, React Testing Library, Git, Github Actions.  Some Python and Terraform.</li>
+      <li>Open Source Projects: <a href="https://github.com/davidcalhoun/jstoxml">jstoxml</a>, <a href="https://github.com/davidcalhoun/tle.js">tle.js</a>, <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors">eslint-plugin-test-selectors</a></li>
     </ul>
   </section>
 </header>
 
 <section role="article" class="job-history">
   <h2>
-    <span>Work Experience</span>
+    <span>Experience</span>
   </h2>
   <ol class="vcalendar job-history-list">
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period">Lead Frontend Engineer <span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> to Present</span></h3>
-        <h4 class="summary p-name subdued"><a href="//www.methanesat.org/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">MethaneSAT</span> (Remote)</a></h4>
+        <h3 class="period"><span>MethaneSAT - Lead Innovation Engineer (Remote)</span><span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> - Present</span></h3>
       </div>
       <ul class="description">
-        <li>Established foundational code for the methane data web portal (React, TypeScript, Next.js, deck.gl).</li>
-        <li>Hired and lead a team of four, working with product to establish features and milestones.</li>
+        <li>Lead Innovation Engineer: R&D and prototyping for upcoming applications (Apr 2025 - present)</li>
+        <li>Lead Frontend Engineer.  Established a truly mission-driven frontend team of five engineers, and built an app to display satellite products, enabling climate research and action. (Aug 2020 - Apr 2025)
+          <ul>
+            <li>Established and managed team logistics while also maintaining code quality, setting technical direction, and contributing code.  Established new features, set milestones, and prioritized tasks for sprints with product and stakeholders.</li>
+            <li>Tech used: <b>Frontend</b>: React, Next.js, TypeScript, deck.gl, MUI, Redux Toolkit, Yarn, Storybook, React Testing Library, Playwright; <b>Backend/Middleware</b>: Node.js, eoAPI (TiTiler, STAC), Python, Mapbox Vector Tiles, Github Actions, COG and GeoJSON file formats.</li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">UI Consultant <span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> to <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span></h4>
-        <h4 class="summary p-name"><a href="//www.netflix.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Netflix</span> - Partner Lifecycle Engineering (Los Gatos, CA)</a></h4>
+        <h3 class="period subdued">Netflix - UI Consultant (Los Gatos, CA)<span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span></h4>
       </div>
       <ul class="description">
-        <li>Maintained an in-house UI component library built on Material UI and added new features and maintained a suite of React apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
-        <li>Worked closely with QA to examine pains in testing React apps, and developed an <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">ESLint plugin</a> to help enforce new test-friendly code standards.</li>
+        <li>Maintained a UI component library, ensuring UI consistency across B2B apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
+        <li>Worked closely with QA, and developed an <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">ESLint plugin</a> to help make code test-friendly.</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Web Developer <span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> to <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span></h3>
-        <h4 class="summary p-name"><a href="//www.webmocha.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">WebMocha</span> (Remote, Part Time)</a></h4>
+        <h3 class="period subdued">Webmocha - Web Developer (Remote, Part Time)<span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span></h3>
       </div>
       <ul class="description">
-        <li>Built a fullstack dashboard tool to ingest and organize technical content from Twitter and Pocket, to assist with a weekly newsletter.  React.js and Node.js.  Also helped with various short-term projects (Wordpress, etc).</li>
+        <li>Various short-term projects (Wordpress, etc) and created a dashboard which greatly sped up curation of a weekly frontend tech newsletter (ingesting data from Twitter and Pocket).  React.js, Node.js, and Redis.</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Software Engineer <span class="time"><time class="dt-start" datetime="2012-05-01">May 2012</time> to <time class="dt-end" datetime="2016-03-01">Mar 2016</time></span></h3>
-        <h4 class="summary p-name"><a href="//planet.com/terrabella/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Skybox Imaging</span></a> and <a href="//www.google.com/" class="url" itemprop="url" target="_blank" rel="noreferrer"><span itemprop="name">Google</span> (Mountain View, CA)</a></h4>
+        <h3 class="period subdued">Skybox Imaging and Google - Software Engineer (Mountain View, CA)<span class="time"><time class="dt-start" datetime="2012-05-01">May 2012</time> - <time class="dt-end" datetime="2016-03-01">Mar 2016</time></span></h3>
       </div>
       <ul class="description">
-        <li>(Aug 2014 - Mar 2016) After Skybox Imaging (aka Terra Bella) was acquired by Google in August 2014, I helped start the groundwork for new imaging satellite dashboards within the Google codebase and new coding standards.</li>
-        <li>(Aug 2013 - Aug 2014) Collaborated with a designer and end users to build an entire fullstack app to preview images in the image processing pipeline.  Node.js, Redis, and Socket.io.</li>
-        <li>Remote Contractor (part time, May 2012 - August 2013) Created the Mission Operations Center dashboard used for monitoring live satellite telemetry, also developed several map-based apps.</li>
+        <li>Frontend engineer (Aug 2013 - Mar 2016)</li>
+        <ul>
+          <li>Built a dashboard to help internal teams track imagery product lifecycle, using Node.js and Socket.io.</li>
+          <li>Built real-time telemetry monitoring accessible with conventional web technology, making it easier to hire a team of developers and also eliminated the need for proprietary ground software.  Tech used: jQuery and WebSockets.</li>
+          <li>Started migration to Google infrastructure post-acquisition.</li>
+        </ul>
+        <li>Part time remote contract (May 2012 - August 2013)</li>
+        <ul>
+          <li>Developed and maintained several map-based apps to demo product potential (jQuery, Leaflet, satellite.js, Bootstrap).</li>
+        </ul>
       </ul>
     </li>
   </ol>
 </section>
 
 <section role="article" class="talks-and-articles">
-  <h2>Media</h2>
+  <h2>Talks & Presentations</h2>
   <ul>
-    <li><a href="//youtu.be/GWevJpYSBz4" target="_blank" rel="noreferrer">(video) Visualizing Large Greenhouse Gas Datasets in the Browser with deck.gl</a></li>
-    <li><a href="//www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">(video) Philosophy and JavaScript</a></li>
-    <li><a href="//www.youtube.com/watch?v=vtvHOn9mIB4" target="_blank" rel="noreferrer">(video) Realtime Satellite Tracking in the Browser</a></li>
+    <li><a href="//youtu.be/GWevJpYSBz4" target="_blank" rel="noreferrer">Visualizing Large Greenhouse Gas Datasets in the Browser with deck.gl</a></li>
+    <li><a href="//www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript</a>: how philosophy can help us understand and cope with constant tech change.</li>
+    <li><a href="//www.youtube.com/watch?v=vtvHOn9mIB4" target="_blank" rel="noreferrer">Realtime Satellite Tracking in the Browser</a></li>
   </ul>
 </section>
 
 <section role="article">
-  <h2>More Info</h2>
+  <h2>Background & Other Info</h2>
   <ul>
     <li class="h-event education" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
-      Education: <a href="//www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a>
+      Education: <a href="//www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a> (BA, Philosophy)
     </li>
-    <li>Interests: Hiking, photography, philosophy, classic movies.</li>
-    <li>References available on request.</li>
   </ul>
 </section>
 

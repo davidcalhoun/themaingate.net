@@ -164,7 +164,7 @@
     .experience:before {
       content: '';
       position: absolute;
-      top: 0.8rem;
+      top: 0.7rem;
       left: -0.78rem;
       display: inline-block;
       background-color: transparent;
@@ -173,6 +173,10 @@
       background-repeat: no-repeat;
       background-size: 8px;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAALVBMVEVHcEwAAAAAAAAAAAAREREBAQEAAAAAAABra2uxsbHZ2dn09PR6enr///9fX19wsMP7AAAACHRSTlMAHHzD9/86mcyfFMAAAACPSURBVHjafZJbDsMgDAQJ9pCAce9/3KgPSqpQz++IlbE3DbYsCip5S78U4YuUq9lBj9rMWj0U9pkl0M0/WAcZqYI2v9AUGWnDTPfOLDDMdFBecd1vdOT5SO2uTCkp8/AFBzkJdaUqkpS2Ug1NYL4C/imDIDAYIxg++HKwqGC9wVGCU8YFmLVxn7UJyxZU9ARvJBYzV993FgAAAABJRU5ErkJggg==);
+    }
+
+    .experience:first-of-type:before {
+      top: 0.6rem;
     }
     
     /* Print overrides. */
@@ -242,7 +246,7 @@
       align-items: center;
       min-width: 100%;
       font-size: 1.2rem;
-      font-weight: bold;
+      font-weight: 900;
       letter-spacing: 0.01rem;
       padding-left: 0.2rem;
     }
@@ -259,6 +263,8 @@
       background-color: #eee;
       padding: 0.2rem 0.4rem;
       border-radius: 3px;
+      white-space: pre;
+      font-weight: 500;
     }
 
     .subSummary li {
@@ -291,7 +297,7 @@
   <section>
     <span itemprop="email">david.b.calhoun+mg@gmail.com</span> - <a href="//themaingate.net">themaingate.net</a></span>
     <ul class="subSummary">
-      <li>Summary: Expert frontend engineer with experience building performant, scalable web apps. Proven leader of teams in remote environments, with a focus on data visualization, UI architecture, and modern JS frameworks.</li>
+      <li>Summary: Senior frontend engineer specializing in performant, scalable web apps. Proven leader of teams in remote environments, with a focus on data visualization, UI architecture, and modern JS frameworks.</li>
       <li>Skills: React, Next.js, TypeScript, Redux, deck.gl, MUI, Node.js, Playwright, Storybook, Yarn, Jest, React Testing Library, Git, Github Actions.  Some Python and Terraform.</li>
       <li>Open Source Projects: <a href="https://github.com/davidcalhoun/jstoxml">jstoxml</a>, <a href="https://github.com/davidcalhoun/tle.js">tle.js</a>, <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors">eslint-plugin-test-selectors</a></li>
     </ul>
@@ -305,7 +311,7 @@
   <ol class="vcalendar job-history-list">
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period"><span>MethaneSAT - Lead Innovation Engineer (Remote)</span><span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> - Present</span></h3>
+        <h3 class="period"><span>MethaneSAT - Lead Innovation Engineer (Remote) building tools for climate research and action</span><span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> - Present</span></h3>
       </div>
       <ul class="description">
         <li>Lead Innovation Engineer: R&D and prototyping for upcoming applications (Apr 2025 - present)</li>
@@ -319,7 +325,7 @@
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Netflix - UI Consultant (Los Gatos, CA)<span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span></h4>
+        <h3 class="period subdued">Netflix - UI Consultant (Los Gatos, CA) building B2B apps<span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span></h4>
       </div>
       <ul class="description">
         <li>Maintained a UI component library, ensuring UI consistency across B2B apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
@@ -328,10 +334,11 @@
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Webmocha - Web Developer (Remote, Part Time)<span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span></h3>
+        <h3 class="period subdued">Webmocha - Web Developer (Remote, Part Time) working on various frontend projects<span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span></h3>
       </div>
       <ul class="description">
-        <li>Various short-term projects (Wordpress, etc) and created a dashboard which greatly sped up curation of a weekly frontend tech newsletter (ingesting data from Twitter and Pocket).  React.js, Node.js, and Redis.</li>
+        <li>Created a dashboard which greatly sped up curation of a weekly frontend tech newsletter (ingesting data from Twitter and Pocket).</li>
+        <li>React.js, Node.js, Redis, Wordpress</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
@@ -339,7 +346,7 @@
         <h3 class="period subdued">Skybox Imaging and Google - Software Engineer (Mountain View, CA)<span class="time"><time class="dt-start" datetime="2012-05-01">May 2012</time> - <time class="dt-end" datetime="2016-03-01">Mar 2016</time></span></h3>
       </div>
       <ul class="description">
-        <li>Frontend engineer (Aug 2013 - Mar 2016)</li>
+        <li>Frontend engineer (Aug 2013 - Mar 2016) building satellite operations tools</li>
         <ul>
           <li>Built a dashboard to help internal teams track imagery product lifecycle, using Node.js and Socket.io.</li>
           <li>Built real-time telemetry monitoring accessible with conventional web technology, making it easier to hire a team of developers and also eliminated the need for proprietary ground software.  Tech used: jQuery and WebSockets.</li>
@@ -364,10 +371,10 @@
 </section>
 
 <section role="article">
-  <h2>Background & Other Info</h2>
+  <h2>Education</h2>
   <ul>
     <li class="h-event education" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
-      Education: <a href="//www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a> (BA, Philosophy)
+      <a href="//www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a> (BA, Philosophy)
     </li>
   </ul>
 </section>

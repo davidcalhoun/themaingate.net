@@ -92,7 +92,7 @@
     h2 { flex: 0.5; font-size: 1.2rem; flex-basis: 100px; }
     header h1 { color: #333; }
     header h1, header h2 { display: inline; }
-    header h2 {color: #757575; text-transform: lowercase; margin-left: 0.25rem;}
+    header h2 {color: #757575; margin-left: 0.25rem;}
     header section {margin-top: 1em;}
     header hgroup {
       display: flex;
@@ -100,7 +100,7 @@
       align-items: center;
     }
 
-    section { line-height: 180%; border-top: 1px dashed #cacaca; padding: 1em 0 1em;}
+    section { line-height: 180%; border-top: 1px dashed #ababab; padding: 1em 0 1em;}
     section h2 { margin: 0 0 0.25em; }
     .hide { display: none !important; }
     em {
@@ -271,6 +271,10 @@
       list-style: square;
       list-style-position: inside;
     }
+
+    .small {
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 
@@ -291,15 +295,17 @@
 
 <header role="banner" class="vcard">
   <hgroup>
-    <h1 class="fn" itemprop="name"><span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span></h1>
-    <h2><span itemprop="jobTitle">Senior frontend Web Developer working remotely from Raleigh, NC</h2>
+    <h1 class="fn" itemprop="name">
+      <span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span>
+      <p itemprop="email" class="subdued small">david.b.calhoun@gmail.com - <a href="https://github.com/davidcalhoun/" target="_blank" rel="noreferrer">Github</a> - <a href="https://www.linkedin.com/in/davidcalhoun/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+    </h1>
+    <h2><span itemprop="jobTitle">Senior Frontend Engineer based in Raleigh, NC (Open to Remote)</h2>
   </hgroup>
   <section>
-    <span itemprop="email">david.b.calhoun@gmail.com</span> - <a href="//themaingate.net" target="_blank" rel="noreferrer">themaingate.net</a></span>
+    <p>Working on performant, scalable web apps. Leader of remote engineering teams, with a focus on map data visualization and UI architecture.</p>
     <ul class="subSummary">
-      <li>Summary: Senior frontend engineer working on climate data and UN tooling for performant, scalable web apps. Leader of teams in remote environments, with a focus on data visualization, UI architecture, and modern JS frameworks.</li>
       <li>Skills: React, Next.js, TypeScript, Redux, deck.gl, MUI, Node.js, Playwright, Storybook, Yarn, Jest, React Testing Library, Git, Github Actions.  Some Python and Terraform.</li>
-      <li>Open Source Projects: <a href="https://github.com/davidcalhoun/jstoxml" target="_blank" rel="noreferrer">jstoxml</a>, <a href="https://github.com/davidcalhoun/tle.js" target="_blank" rel="noreferrer">tle.js</a>, <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">eslint-plugin-test-selectors</a></li>
+      <li>Open Source Projects: <a href="https://github.com/davidcalhoun/jstoxml" target="_blank" rel="noreferrer">jstoxml</a> for outputting XML (over 1.3 million downloads per month), <a href="https://github.com/davidcalhoun/tle.js" target="_blank" rel="noreferrer">tle.js</a> for satellite tracking, <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">eslint-plugin-test-selectors</a> for helping with UI testing (over 50k downloads per month).</li>
     </ul>
   </section>
 </header>
@@ -311,62 +317,57 @@
   <ol class="vcalendar job-history-list">
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period"><span>MethaneSAT - Lead Innovation Engineer (Remote) building tools for climate research and action</span></h3>
+        <h3 class="period subdued">Author and Hiker: Completed the Appalachian Trail and currently writing a book about the experience</h4>
+        <span class="time"><time class="dt-start" datetime="2026-03-01">Mar 2026</time> - <time class="dt-end" datetime="2026-07-01">Present</time></span>
+      </div>
+    </li>
+    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="period"><span>MethaneSAT - Lead Engineer building tools for climate research and action (Remote)</span></h3>
         <span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> - <time class="dt-end" datetime="2026-02-27">Feb 2026</time></span>
       </div>
       <ul class="description">
-        <li>Lead Innovation Engineer (Apr 2025 - Feb 2026): part time work on applications to enable the UN to send methane alerts to governments and companies (IMEO/MARS)</li>
-        <li>Lead Frontend Engineer (Aug 2020 - Apr 2025):  Created and led a frontend team of five engineers, and built an app to display satellite products necessary for climate research and action, visualizing terabytes of satellite data.  The <a href="https://portal.methanesat.org" target="_blank" rel="noreferrer">MethaneSAT Portal</a> now displays hundreds of methane datasets for expert and nonexpert users around the world.
-          <ul>
-            <li>Established and managed team logistics and codebase, setting technical and feature direction.  Established new features, set milestones, and prioritized tasks for sprints with product and stakeholders.</li>
-            <li>Tech used:
-              <ul>
-                <li><b>Core</b>: React, TypeScript, Next.js, Yarn workspace monorepo architecture</li>
-                <li><b>Data/GIS</b>: deck.gl, Mapbox and Google Maps, eoAPI (TiTiler, STAC), Mapbox Vector Tiles, COG and GeoJSON</li>
-                <li><b>Tooling</b>: React Testing Library, Playwright, Terraform, Node.js, Github Actions</li>
-                <li><b>Other</b>: MUI, Redux Toolkit, Storybook</li>
-              </ul>
-            </ul>
-        </li>
+        <li>Created and led a team of five frontend engineers, established and managed team logistics and codebase, set technical and feature direction.  Set milestones and prioritized tasks for sprints with the product team and stakeholders.</li>
+        <li>Architected <a href="https://portal.methanesat.org" target="_blank" rel="noreferrer">Portal</a>, a web app visualizing terabytes of satellite data to uncover the location and magnitude of worldwide methane leaks.</li>
+        <li>Maintained and improved UN's IMEO/MARS internal web apps to detect methane leaks and notify governments and companies, resulting in mitigation of hundreds of leaks.</li>
+        <li><b>Core tech</b>: React, TypeScript, Next.js, Yarn workspace monorepo architecture; <b>Data/GIS</b>: deck.gl, Mapbox and Google Maps, eoAPI (TiTiler, STAC), Mapbox Vector Tiles, COG and GeoJSON; <b>Tooling/Misc</b>: React Testing Library, Playwright, Terraform, Node.js, Github Actions, MUI, Redux Toolkit, Storybook</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Netflix - UI Consultant (Los Gatos, CA) building B2B apps</h4>
+        <h3 class="period subdued">Hiking the Appalachian Trail and job search</h3>
+        <span class="time"><time class="dt-start" datetime="2019-04-01">Apr 2019</time> - <time class="dt-end" datetime="2020-07-01">Jul 2020</time></span>
+      </div>
+    </li>
+    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+      <div class="summaryContainer">
+        <h3 class="period subdued">Netflix - UI Consultant building B2B apps (Los Gatos, CA)</h3>
         <span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span>
       </div>
       <ul class="description">
-        <li>Maintained a UI component library, ensuring UI consistency across multiple B2B apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
+        <li>Maintained a UI component library and ensured UI consistency across multiple B2B apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
         <li>Worked closely with QA, and developed an <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">ESLint plugin</a> to help make code test-friendly.</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Webmocha - Web Developer (Remote, Part Time) working on frontend projects</h3>
+        <h3 class="period subdued">Webmocha - Web Developer working on frontend projects (Remote, Concurrent Part Time Work)</h3>
         <span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span>
       </div>
       <ul class="description">
-        <li>Created a dashboard which greatly sped up curation of a weekly frontend tech newsletter (ingesting data from Twitter and Pocket).</li>
-        <li>Added and updated Wordpress-based websites for businesses.</li>
-        <li>React.js, Node.js, Redis, Wordpress</li>
+        <li>Created a dashboard which saved hours of time curating a weekly frontend tech newsletter by automatically ingesting relevant links from Twitter and Pocket. (React.js, Node.js, Redis)</li>
+        <li>Developed and updated Wordpress-based websites for small businesses.</li>
       </ul>
     </li>
     <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
       <div class="summaryContainer">
-        <h3 class="period subdued">Skybox Imaging and Google - Software Engineer (Mountain View, CA)</h3>
+        <h3 class="period subdued">Skybox Imaging (acquired by Google) - Software Engineer building satellite operations tools (Mountain View, CA)</h3>
         <span class="time"><time class="dt-start" datetime="2012-05-01">May 2012</time> - <time class="dt-end" datetime="2016-03-01">Mar 2016</time></span>
       </div>
       <ul class="description">
-        <li>Frontend engineer (Aug 2013 - Mar 2016) building satellite operations tools</li>
-        <ul>
-          <li>Built a dashboard to help internal teams track imagery product lifecycle, using Node.js and Socket.io.</li>
-          <li>Built real-time telemetry monitoring accessible with conventional web technology, making it easier to hire a team of developers and also eliminated the need for proprietary ground software.</li>
-          <li>Started migration to Google infrastructure post-acquisition.</li>
-        </ul>
-        <li>Part time remote contract (May 2012 - August 2013)</li>
-        <ul>
-          <li>Developed and maintained several map-based apps to demo product potential (jQuery, Leaflet, satellite.js, Bootstrap).</li>
-        </ul>
+        <li>Implemented an imagery processing dashboard to give internal teams better visibility into in-progress imagery processing, using Node.js and Socket.io.</li>
+        <li>Built pioneering real-time telemetry monitoring in a conventional web app, eliminating the need for traditional proprietary ground software.</li>
+        <li>Developed and maintained several map-based apps to demo product potential (jQuery, Leaflet, satellite.js, Bootstrap) (part-time remote contract role).</li>
       </ul>
     </li>
   </ol>
@@ -375,9 +376,9 @@
 <section role="article" class="talks-and-articles">
   <h2>Talks & Presentations</h2>
   <ul>
-    <li><a href="//youtu.be/GWevJpYSBz4" target="_blank" rel="noreferrer">Visualizing Large Greenhouse Gas Datasets in the Browser with deck.gl</a></li>
-    <li><a href="//www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript</a>: how philosophy can surprisingly help us understand and cope with constant tech change.</li>
-    <li><a href="//www.youtube.com/watch?v=vtvHOn9mIB4" target="_blank" rel="noreferrer">Realtime Satellite Tracking in the Browser</a></li>
+    <li><a href="//youtu.be/GWevJpYSBz4" target="_blank" rel="noreferrer">Visualizing Large Greenhouse Gas Datasets in the Browser with deck.gl</a> (All Things Open 2022)</li>
+    <li><a href="//www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript</a> (JSConf 2015): how philosophy can surprisingly help us understand and cope with constant tech change.</li>
+    <li><a href="//www.youtube.com/watch?v=vtvHOn9mIB4" target="_blank" rel="noreferrer">Real-time Satellite Tracking in the Browser</a> (JSConf 2014)</li>
   </ul>
 </section>
 

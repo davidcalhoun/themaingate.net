@@ -221,10 +221,11 @@
     }
     
     /* Mobile overrides */
-    @media only screen and (max-width: 480px) {
-        body { max-width: 97%; margin: 1em 0; }
+    @media only screen and (max-width: 600px) {
+        body { max-width: 97%; margin: 1rem 1rem; }
         h1 { font-size: 200%; }
         header h1, header h2 { display: block; }
+        header .title { display: block; }
     }
 
     .printOnly {
@@ -240,11 +241,6 @@
     }
 
     .period {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      min-width: 100%;
       font-size: 1.2rem;
       font-weight: 900;
       letter-spacing: 0.01rem;

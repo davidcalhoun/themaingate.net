@@ -8,7 +8,6 @@
   <meta name="author" content="David Calhoun">
   <meta name="description" content="Frontend developer David Calhoun's résumé.">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="verify-v1" content="icq5J/6O+loOEB3c47M2MKmXvt+GYiiKf0RtjWrx8aA=">
 
   <link rel="canonical" href="https://themaingate.net/resume/">
   <link rel="Shortcut Icon" type="image/ico" href="https://themaingate.net/favicon.ico">
@@ -92,15 +91,16 @@
     h2 { flex: 0.5; font-size: 1.2rem; flex-basis: 100px; }
     header h1 { color: #333; }
     header h1, header h2 { display: inline; }
-    header h2 {color: #757575; margin-left: 0.25rem;}
     header section {margin-top: 1em;}
-    header hgroup {
+    header .title {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
-    section { line-height: 180%; border-top: 1px dashed #ababab; padding: 1em 0 1em;}
+    section { line-height: 180%; padding: 1em 0 1em;}
+    section:not(.title) { border-top: 1px dashed #ababab; }
     section h2 { margin: 0 0 0.25em; }
     .hide { display: none !important; }
     em {
@@ -280,28 +280,29 @@
 
 <body class="hresume" itemscope itemtype="https://schema.org/Person">
 
-<meta itemprop="image" content="//themaingate.net/david-calhoun.jpg" />
+<meta itemprop="image" content="https://www.themaingate.net/david-calhoun.jpg" />
 <meta itemprop="gender" content="Male" />
 <meta itemprop="honorificPrefix" content="Mr" />
-<meta itemprop="nationality" content="//en.wikipedia.org/wiki/United_States" />
+<meta itemprop="nationality" content="United States" />
 <span itemprop="workLocation" itemscope itemtype="https://schema.org/PostalAddress">
   <meta itemprop="addressLocality" content="Raleigh" />
   <span itemprop="addressCountry" itemscope itemtype="https://schema.org/Country">
     <meta itemprop="name" content="USA" />
   </span>
 </span>
-<meta itemprop="worksFor" content="Self" />
-<meta itemprop="mainEntityOfPage" content="//themaingate.net" />
+<meta itemprop="mainEntityOfPage" content="https://www.themaingate.net" />
 
 <header role="banner" class="vcard">
-  <hgroup>
-    <h1 class="fn" itemprop="name">
-      <span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span>
-      <p itemprop="email" class="subdued small">david.b.calhoun@gmail.com - <a href="https://github.com/davidcalhoun/" target="_blank" rel="noreferrer">Github</a> - <a href="https://www.linkedin.com/in/davidcalhoun/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-    </h1>
-    <h2><span itemprop="jobTitle">Senior Frontend Engineer based in Raleigh, NC (Open to Remote)</h2>
-  </hgroup>
-  <section>
+  <section class="title">
+    <div class="contact">
+      <h1 class="fn">
+        <span itemprop="name"><span itemprop="givenName">David</span> <span itemprop="familyName">Calhoun</span></span>
+      </h1>
+      <p class="subdued small"><span itemprop="email">david.b.calhoun@gmail.com</span> - <a href="https://github.com/davidcalhoun/" target="_blank" rel="noreferrer" itemprop="sameAs">Github</a> - <a href="https://www.linkedin.com/in/davidcalhoun/" target="_blank" rel="noreferrer" itemprop="sameAs">LinkedIn</a></p>
+    </div>
+    <h2><span itemprop="jobTitle">Senior Frontend Engineer</span> based in Raleigh, NC (Open to Remote)</h2>
+  </section>
+  <section class="subtitle">
     <p>Working on performant, scalable web apps. Leader of remote engineering teams, with a focus on map data visualization and UI architecture.</p>
     <ul class="subSummary">
       <li>Skills: React, Next.js, TypeScript, Redux, deck.gl, MUI, Node.js, Playwright, Storybook, Yarn, Jest, React Testing Library, Git, Github Actions.  Some Python and Terraform.</li>
@@ -310,61 +311,61 @@
   </section>
 </header>
 
-<section role="article" class="job-history">
-  <h2>
+<section aria-labelledby="experience" class="job-history">
+  <h2 id="experience">
     <span>Experience</span>
   </h2>
   <ol class="vcalendar job-history-list">
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period subdued">Author and Hiker: Completed the Appalachian Trail and currently writing a book about the experience</h3>
-        <span class="time"><time class="dt-start" datetime="2026-03-01">Mar 2026</time> - <time class="dt-end" datetime="2026-07-01">Present</time></span>
+        <h3 class="period subdued"><span itemprop="roleName">Author/Hiker</span>: Completed the Appalachian Trail and currently writing a book about the experience</h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2026-03-01">Mar 2026</time> - <time class="dt-end" itemprop="endDate" datetime="2026-07-01">Present</time></span>
       </div>
     </li>
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period"><span>MethaneSAT - Lead Engineer building tools for climate research and action (Remote)</span></h3>
-        <span class="time"><time class="dt-start" datetime="2020-08-03">Aug 2020</time> - <time class="dt-end" datetime="2026-02-27">Feb 2026</time></span>
+        <h3 class="period"><span><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">MethaneSAT</span></span> - <span itemprop="roleName">Lead Engineer</span> building tools for climate research and action (Remote)</span></h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2020-08-03">Aug 2020</time> - <time class="dt-end" itemprop="endDate" datetime="2026-02-27">Feb 2026</time></span>
       </div>
-      <ul class="description">
+      <ul class="description" itemprop="description">
         <li>Created and led a team of five frontend engineers, established and managed team logistics and codebase, set technical and feature direction.  Set milestones and prioritized tasks for sprints with the product team and stakeholders.</li>
         <li>Architected <a href="https://portal.methanesat.org" target="_blank" rel="noreferrer">Portal</a>, a web app visualizing terabytes of satellite data to uncover the location and magnitude of worldwide methane leaks.</li>
         <li>Maintained and improved UN's IMEO/MARS internal web apps to detect methane leaks and notify governments and companies, resulting in mitigation of hundreds of leaks.</li>
         <li><b>Core tech</b>: React, TypeScript, Next.js, Yarn workspace monorepo architecture; <b>Data/GIS</b>: deck.gl, Mapbox and Google Maps, eoAPI (TiTiler, STAC), Mapbox Vector Tiles, COG and GeoJSON; <b>Tooling/Misc</b>: React Testing Library, Playwright, Terraform, Node.js, Github Actions, MUI, Redux Toolkit, Storybook.</li>
       </ul>
     </li>
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period subdued">Hiking the Appalachian Trail and job search</h3>
-        <span class="time"><time class="dt-start" datetime="2019-04-01">Apr 2019</time> - <time class="dt-end" datetime="2020-07-01">Jul 2020</time></span>
+        <h3 class="period subdued"><span itemprop="roleName">Hiker</span>: Appalachian Trail and Job Search</h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2019-04-01">Apr 2019</time> - <time class="dt-end" itemprop="endDate" datetime="2020-07-01">Jul 2020</time></span>
       </div>
     </li>
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period subdued">Netflix - UI Consultant building B2B apps (Los Gatos, CA)</h3>
-        <span class="time"><time class="dt-start" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" datetime="2019-03-29">Mar 2019</time></span>
+        <h3 class="period subdued"><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Netflix</span></span> - <span itemprop="roleName">UI Consultant</span> building B2B apps (Los Gatos, CA)</h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2017-11-06">Nov 2017</time> - <time class="dt-end" itemprop="endDate" datetime="2019-03-29">Mar 2019</time></span>
       </div>
-      <ul class="description">
+      <ul class="description" itemprop="description">
         <li>Maintained a UI component library and ensured UI consistency across multiple B2B apps (Node.js, React.js, Redux, RXJS, Material UI).</li>
         <li>Worked closely with QA, and developed an <a href="https://github.com/davidcalhoun/eslint-plugin-test-selectors" target="_blank" rel="noreferrer">ESLint plugin</a> to help make code test-friendly.</li>
       </ul>
     </li>
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period subdued">Webmocha - Web Developer working on frontend projects (Remote, Concurrent Part Time Work)</h3>
-        <span class="time"><time class="dt-start" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" datetime="2017-11-01">Nov 2017</time></span>
+        <h3 class="period subdued"><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Webmocha</span></span> - <span itemprop="roleName">Web Developer</span> working on frontend projects (Remote, Concurrent Part Time Work)</h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2009-01-01">Jan 2009</time> - <time class="dt-end" itemprop="endDate" datetime="2017-11-01">Nov 2017</time></span>
       </div>
-      <ul class="description">
+      <ul class="description" itemprop="description">
         <li>Created a dashboard which saved hours of time curating a weekly frontend tech newsletter by automatically ingesting relevant links from Twitter and Pocket (React.js, Node.js, Redis).</li>
         <li>Developed and updated Wordpress-based websites for small businesses.</li>
       </ul>
     </li>
-    <li class="experience h-event" itemscope itemtype="https://schema.org/Organization">
+    <li class="experience h-event" itemprop="worksFor" itemscope itemtype="https://schema.org/Role">
       <div class="summaryContainer">
-        <h3 class="period subdued">Skybox Imaging (acquired by Google) - Software Engineer building satellite operations tools (Mountain View, CA)</h3>
-        <span class="time"><time class="dt-start" datetime="2012-05-01">May 2012</time> - <time class="dt-end" datetime="2016-03-01">Mar 2016</time></span>
+        <h3 class="period subdued"><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Skybox Imaging</span></span> (acquired by <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Google</span></span>) - <span itemprop="roleName">Software Engineer</span> building satellite operations tools (Mountain View, CA)</h3>
+        <span class="time"><time class="dt-start" itemprop="startDate" datetime="2012-05-01">May 2012</time> - <time class="dt-end" itemprop="endDate" datetime="2016-03-01">Mar 2016</time></span>
       </div>
-      <ul class="description">
+      <ul class="description" itemprop="description">
         <li>Implemented an imagery processing dashboard to give internal teams better visibility into in-progress imagery processing, using Node.js and Socket.io.</li>
         <li>Built pioneering real-time telemetry monitoring in a conventional web app, eliminating the need for traditional proprietary ground software.</li>
         <li>Developed and maintained several map-based apps to demo product potential (jQuery, Leaflet, satellite.js, Bootstrap) (part-time remote contract role).</li>
@@ -373,8 +374,8 @@
   </ol>
 </section>
 
-<section role="article" class="talks-and-articles">
-  <h2>Talks & Presentations</h2>
+<section aria-labelledby="talks" class="talks-and-articles">
+  <h2 id="talks">Talks & Presentations</h2>
   <ul>
     <li><a href="https://youtu.be/GWevJpYSBz4" target="_blank" rel="noreferrer">Visualizing Large Greenhouse Gas Datasets in the Browser with deck.gl</a> (All Things Open 2022)</li>
     <li><a href="https://www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript</a> (JSConf 2015): how philosophy can surprisingly help us understand and cope with constant tech change.</li>
@@ -382,11 +383,11 @@
   </ul>
 </section>
 
-<section role="article">
-  <h2>Education</h2>
+<section aria-labelledby="education">
+  <h2 id="education">Education</h2>
   <ul>
     <li class="h-event education" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
-      <a href="https://www.biola.edu/" class="url p-name" itemprop="name" target="_blank" rel="noreferrer">Biola University</a> - BA, Philosophy (see my <a href="https://www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript talk</a>)
+      <a href="https://www.biola.edu/" class="url p-name" target="_blank" rel="noreferrer"><span itemprop="name">Biola University</span></a> - BA, Philosophy (see my <a href="https://www.youtube.com/watch?v=kGsvoAbddBY" target="_blank" rel="noreferrer">Philosophy and JavaScript talk</a>)
     </li>
   </ul>
 </section>
